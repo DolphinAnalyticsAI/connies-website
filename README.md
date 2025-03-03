@@ -7,12 +7,6 @@ Refer to the documents in the `/requirements` folder for detailed design and fun
 ## Site Location
 The developer will use the `/site` subfolder to add their site files for hugo site.
 
-## Git Branch to do work
-Developer will not use the Main branch but create a feature branch named with their name.
-
-
-Here’s the updated section with the correct repository name (`connies-website`) and clear instructions for developers:
-
 ---
 
 ## **Git Branch Instructions**
@@ -20,7 +14,7 @@ Developers must **not** use the `main` branch directly. Instead, follow these st
 
 1. **Clone the repository** (if you haven't already):
    ```bash
-   git clone https://github.com/your-username/connies-website.git
+   git clone https://github.com/DolphinAnalyticsAI/connies-website.git
    ```
 
 2. **Navigate to the project folder**:
@@ -28,7 +22,7 @@ Developers must **not** use the `main` branch directly. Instead, follow these st
    cd connies-website
    ```
 
-3. **Create a new feature branch** named with your first name (e.g., `feature/john`):
+3. **Create a new feature branch** named with your first name (e.g., `feature/xxxxxxx`):
    ```bash
    git checkout -b feature/your-name
    ```
