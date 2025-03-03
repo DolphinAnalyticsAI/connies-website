@@ -1,0 +1,88 @@
+# ----------------------------------------
+# 🛠️ Hugo Project .gitignore
+# ----------------------------------------
+
+# 🖥️ OS-specific files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# 🚀 Hugo build artifacts
+.hugo_cache/
+.hugo_build.json
+resources/_gen/
+resources/
+
+public/
+.hugo_build.json
+.hugo_build.lock
+
+# Ignore Hugo's output directory
+site/public/
+
+
+
+# 🔧 Node.js dependencies
+node_modules/
+package-lock.json
+yarn.lock
+bun.lockb
+
+# 📚 Hugo modules (if using Go modules)
+go.mod
+go.sum
+
+# 🛠️ Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+
+# 🧪 Test/build result files
+result
+result-*
+
+# 📦 Archives and compressed files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# 🔄 Deployment configurations
+.gitlab-ci.yml
+.github/
+.netlify/
+.circleci/
+
+# 🎨 Editor/IDE-specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# ⚙️ Ignore sensitive or environment-specific files
+.env
+.env.*
+
+# ----------------------------------------
+# ⚠️ Special Rules for Hugo Files
+# ----------------------------------------
+
+# ❌ Exclude generated resources
+/resources/_gen/
+
+# ✅ Allow essential Hugo config files
+!config.toml
+!hugo.toml
+!config.yaml
+!config.json
+
+# ✅ Allow Hugo-specific JSON/YAML/TOML files
+!*.json
+!*.yaml
+!*.toml

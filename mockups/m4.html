@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Ideas Hub</title>
+  <style>
+    /* Global Styles */
+    :root {
+      --primary-color: #4CAF50;
+      --background-light: #ffffff;
+      --text-light: #333333;
+      --background-dark: #121212;
+      --text-dark: #f5f5f5;
+      --card-bg-light: #f9f9f9;
+      --card-bg-dark: #1e1e1e;
+      --transition-speed: 0.3s;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--background-light);
+      color: var(--text-light);
+      transition: background-color var(--transition-speed), color var(--transition-speed);
+    }
+
+    body.dark-mode {
+      background-color: var(--background-dark);
+      color: var(--text-dark);
+    }
+
+    /* Header & Hero Section */
+    header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin: 10px 0 20px;
+    }
+
+    .cta-button {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .cta-button:hover {
+      transform: scale(1.05);
+    }
+
+    /* Navigation & Dark Mode Toggle */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: var(--background-light);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    body.dark-mode nav {
+      background-color: var(--background-dark);
+    }
+
+    .dark-mode-toggle {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .toggle-switch {
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 24px;
+    }
+
+    .toggle-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: var(--transition-speed);
+      border-radius: 24px;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 20px;
+      left: 2px;
+      bottom: 2px;
+      background-color: white;
+      transition: var(--transition-speed);
+      border-radius: 50%;
+    }
+
+    input:checked + .slider {
+      background-color: var(--primary-color);
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+
+    /* Business Ideas Grid */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: var(--card-bg-light);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    }
+
+    body.dark-mode .card {
+      background-color: var(--card-bg-dark);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 1.5rem;
+    }
+
+    .card p {
+      margin: 5px 0;
+      font-size: 0.9rem;
+    }
+
+    .card .tags {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .card .tags span {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+    }
+
+    /* Notification Banner */
+    .notification {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      animation: slideIn 0.5s ease-in-out;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--background-light);
+      color: var(--text-light);
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    body.dark-mode footer {
+      background-color: var(--background-dark);
+    }
+
+    footer .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 10px 0;
+    }
+
+    footer .social-icons a {
+      color: var(--text-light);
+      font-size: 1.5rem;
+      transition: color var(--transition-speed);
+    }
+
+    body.dark-mode footer .social-icons a {
+      color: var(--text-dark);
+    }
+
+    footer .social-icons a:hover {
+      color: var(--primary-color);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <h2>Business Ideas Hub</h2>
+    <div class="dark-mode-toggle">
+      <span>Dark Mode</span>
+      <label class="toggle-switch">
+        <input type="checkbox" id="dark-mode-toggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Find Your Next Big Idea</h1>
+    <p>Explore a curated list of business ideas to kickstart your entrepreneurial journey.</p>
+    <button class="cta-button">Get Started</button>
+  </header>
+
+  <!-- Business Ideas Grid -->
+  <div class="grid-container">
+    <div class="card">
+      <h3>Freelance VA</h3>
+      <p>Offer virtual assistance services to businesses.</p>
+      <p><strong>Income Potential:</strong> Medium</p>
+      <p><strong>Effort Level:</strong> Easy</p>
+      <div class="tags">
+        <span>Digital</span>
+        <span>Service-Based</span>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Handmade Crafts</h3>
+      <p>Sell handmade products online or at local markets.</p>
+      <p><strong>Income Potential:</strong> High</p>
+      <p><strong>Effort Level:</strong> Medium</p>
+      <div class="tags">
+        <span>Handmade</span>
+        <span>E-commerce</span>
+      </div>
+    </div>
+    <!-- Add more cards here -->
+  </div>
+
+  <!-- Notification Banner -->
+  <div class="notification">
+    🚀 New Idea Alert: 'Freelance VA' just added!
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="#">📘</a>
+      <a href="#">🐦</a>
+      <a href="#">📸</a>
+    </div>
+    <p>&copy; 2023 Business Ideas Hub. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Dark Mode Toggle
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    darkModeToggle.addEventListener('change', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+
+    // Notification Banner
+    setTimeout(() => {
+      document.querySelector('.notification').style.display = 'none';
+    }, 5000);
+  </script>
+</body>
+</html>

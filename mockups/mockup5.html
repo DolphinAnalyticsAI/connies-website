@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Ideas for Moms</title>
+    <style>
+        /* =============================
+           THEME VARIABLES (LIGHT, DARK, PINK)
+           ============================= */
+        :root {
+            --primary-color: #ff7f50;
+            --secondary-color: #ffe6e1;
+            --background-color: #fffaf5;
+            --text-color: #333;
+            --card-bg: white;
+            --card-shadow: rgba(0, 0, 0, 0.1);
+            --category-bg: #ffdab9;
+            --tag-bg: #f3f3f3;
+            --font-family: 'Arial, sans-serif';
+        }
+
+        /* DARK THEME */
+        [data-theme="dark"] {
+            --primary-color: #222;
+            --secondary-color: #444;
+            --background-color: #181818;
+            --text-color: #f1f1f1;
+            --card-bg: #2a2a2a;
+            --card-shadow: rgba(255, 255, 255, 0.1);
+            --category-bg: #444;
+            --tag-bg: #555;
+        }
+
+        /* PINK THEME */
+        [data-theme="pink"] {
+            --primary-color: #ff66a3;
+            --secondary-color: #ffb3cc;
+            --background-color: #fff0f5;
+            --text-color: #660033;
+            --card-bg: white;
+            --card-shadow: rgba(0, 0, 0, 0.1);
+            --category-bg: #ff99cc;
+            --tag-bg: #ffdde1;
+        }
+
+        /* =============================
+           TYPOGRAPHY OPTIONS
+           ============================= */
+        [data-font="sans-serif"] { --font-family: 'Arial, sans-serif'; }
+        [data-font="serif"] { --font-family: 'Georgia, serif'; }
+        [data-font="monospace"] { --font-family: 'Courier New, monospace'; }
+
+        /* =============================
+           GLOBAL STYLES
+           ============================= */
+        body {
+            font-family: var(--font-family);
+            margin: 0;
+            padding: 0;
+            background: var(--background-color);
+            color: var(--text-color);
+            transition: background 0.3s ease, color 0.3s ease, font-family 0.3s ease;
+        }
+
+        /* =============================
+           HEADER (WITH GRADIENT DESIGN)
+           ============================= */
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        /* =============================
+           HERO SECTION (HOME PAGE)
+           ============================= */
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background: var(--secondary-color);
+        }
+
+        .hero h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 18px;
+            color: white;
+            background: var(--primary-color);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: var(--text-color);
+        }
+
+        /* =============================
+           SEARCH BAR
+           ============================= */
+        .search-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .search-container input {
+            width: 80%;
+            max-width: 400px;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+        }
+
+        /* =============================
+           IDEA CARDS (GRID LAYOUT)
+           ============================= */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .idea-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px var(--card-shadow);
+            transition: transform 0.2s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .idea-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* CATEGORY STYLE */
+        .category {
+            font-size: 12px;
+            padding: 5px 10px;
+            background: var(--category-bg);
+            border-radius: 15px;
+            margin-bottom: 5px;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        /* TAG STYLE */
+        .tags {
+            font-size: 10px;
+            padding: 3px 8px;
+            background: var(--tag-bg);
+            border-radius: 10px;
+            margin-right: 3px;
+            display: inline-block;
+        }
+
+        /* =============================
+           FOOTER (STYLIZED)
+           ============================= */
+        .footer {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="header">💡 Business Ideas for Moms</div>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <h1>Start Your Business from Home</h1>
+        <p>Find simple, profitable, and flexible business ideas that fit your lifestyle.</p>
+        <a href="#" class="btn">Browse Ideas</a>
+    </div>
+
+    <!-- SEARCH & FILTERS -->
+    <div class="search-container">
+        <input type="text" placeholder="Search for a business idea...">
+    </div>
+
+    <!-- IDEA CARDS -->
+    <div class="grid-container">
+        <a class="idea-card" onclick="showIdeaDetails('Selling Printables on Etsy')">
+            <span class="category">Digital Business</span>
+            <h3>📌 Selling Printables on Etsy</h3>
+            <p>Create & sell downloadable planners, checklists, and more.</p>
+            <div class="tags">Passive Income</div>
+            <div class="tags">Low Startup Cost</div>
+        </a>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        © 2025 Business Ideas for Moms - All Rights Reserved
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        function showIdeaDetails(idea) {
+            alert("Navigating to details page for: " + idea);
+        }
+
+        // Set Theme and Font
+        document.addEventListener("DOMContentLoaded", () => {
+            document.documentElement.setAttribute("data-theme", localStorage.getItem("theme") || "light");
+            document.documentElement.setAttribute("data-font", localStorage.getItem("font") || "sans-serif");
+        });
+    </script>
+
+</body>
+</html>

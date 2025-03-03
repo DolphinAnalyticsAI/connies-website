@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Ideas for Moms</title>
+    <style>
+        /* THEME VARIABLES */
+        :root {
+            --primary-color: #ff7f50;
+            --secondary-color: #ffe6e1;
+            --background-color: #fffaf5;
+            --text-color: #333;
+            --card-bg: white;
+            --card-shadow: rgba(0, 0, 0, 0.1);
+        }
+
+        /* DARK THEME */
+        [data-theme="dark"] {
+            --primary-color: #222;
+            --secondary-color: #444;
+            --background-color: #181818;
+            --text-color: #f1f1f1;
+            --card-bg: #2a2a2a;
+            --card-shadow: rgba(255, 255, 255, 0.1);
+        }
+
+        /* PINK THEME */
+        [data-theme="pink"] {
+            --primary-color: #ff66a3;
+            --secondary-color: #ffb3cc;
+            --background-color: #fff0f5;
+            --text-color: #660033;
+            --card-bg: white;
+            --card-shadow: rgba(0, 0, 0, 0.1);
+        }
+
+        /* GLOBAL STYLES */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--background-color);
+            color: var(--text-color);
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        /* HEADER */
+        .header {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            position: relative;
+        }
+
+        /* THEME SWITCHER */
+        .theme-switcher {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            cursor: pointer;
+            background: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .theme-dropdown {
+            display: none;
+            position: absolute;
+            right: 20px;
+            top: 40px;
+            background: var(--card-bg);
+            box-shadow: 0 4px 8px var(--card-shadow);
+            border-radius: 5px;
+            padding: 5px 0;
+            text-align: left;
+        }
+
+        .theme-dropdown button {
+            display: block;
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            text-align: left;
+            font-size: 14px;
+            color: var(--text-color);
+        }
+
+        .theme-dropdown button:hover {
+            background: var(--secondary-color);
+        }
+
+        /* IDEA CARDS */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .idea-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px var(--card-shadow);
+            transition: transform 0.2s ease;
+        }
+
+        .idea-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .idea-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .idea-card p {
+            font-size: 16px;
+            color: var(--text-color);
+            margin-bottom: 10px;
+        }
+
+        .meta-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .tags {
+            font-size: 12px;
+            padding: 5px 10px;
+            background: var(--secondary-color);
+            border-radius: 15px;
+            margin-right: 5px;
+            display: inline-block;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            color: white;
+            background: var(--primary-color);
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: var(--text-color);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        💡 Business Ideas for Moms
+        <div class="theme-switcher" onclick="toggleThemeDropdown()">🎨 Theme</div>
+        <div class="theme-dropdown">
+            <button onclick="setTheme('light')">Light</button>
+            <button onclick="setTheme('dark')">Dark</button>
+            <button onclick="setTheme('pink')">Pink</button>
+        </div>
+    </div>
+
+    <!-- IDEA CARDS -->
+    <div class="grid-container">
+        <div class="idea-card">
+            <h3>📌 Selling Printables on Etsy</h3>
+            <p>Create & sell downloadable planners, checklists, and more.</p>
+            <div class="meta-info">
+                <span>💰 Potential: $1,000 - $5,000/month</span>
+                <span>⚡ Effort: Easy</span>
+            </div>
+            <div class="tags">Digital Business</div>
+            <div class="tags">Passive Income</div>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="idea-card">
+            <h3>📌 Selling Printables on Etsy</h3>
+            <p>Create & sell downloadable planners, checklists, and more.</p>
+            <div class="meta-info">
+                <span>💰 Potential: $1,000 - $5,000/month</span>
+                <span>⚡ Effort: Easy</span>
+            </div>
+            <div class="tags">Digital Business</div>
+            <div class="tags">Passive Income</div>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="idea-card">
+            <h3>📌 Selling Printables on Etsy</h3>
+            <p>Create & sell downloadable planners, checklists, and more.</p>
+            <div class="meta-info">
+                <span>💰 Potential: $1,000 - $5,000/month</span>
+                <span>⚡ Effort: Easy</span>
+            </div>
+            <div class="tags">Digital Business</div>
+            <div class="tags">Passive Income</div>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="idea-card">
+            <h3>📌 Selling Printables on Etsy</h3>
+            <p>Create & sell downloadable planners, checklists, and more.</p>
+            <div class="meta-info">
+                <span>💰 Potential: $1,000 - $5,000/month</span>
+                <span>⚡ Effort: Easy</span>
+            </div>
+            <div class="tags">Digital Business</div>
+            <div class="tags">Passive Income</div>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="idea-card">
+            <h3>📌 Selling Printables on Etsy</h3>
+            <p>Create & sell downloadable planners, checklists, and more.</p>
+            <div class="meta-info">
+                <span>💰 Potential: $1,000 - $5,000/month</span>
+                <span>⚡ Effort: Easy</span>
+            </div>
+            <div class="tags">Digital Business</div>
+            <div class="tags">Passive Income</div>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        function toggleThemeDropdown() {
+            document.querySelector(".theme-dropdown").style.display = 
+                document.querySelector(".theme-dropdown").style.display === "block" ? "none" : "block";
+        }
+
+        function setTheme(theme) {
+            document.documentElement.setAttribute("data-theme", theme);
+            localStorage.setItem("theme", theme);
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const savedTheme = localStorage.getItem("theme") || "light";
+            setTheme(savedTheme);
+        });
+    </script>
+
+</body>
+</html>

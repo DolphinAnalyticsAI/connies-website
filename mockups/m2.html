@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Ideas for Moms - Modern UI</title>
+    <style>
+        /* =============================
+           THEME VARIABLES (MODERN LIGHT/DARK)
+           ============================= */
+        :root {
+            --primary-color: #6A5ACD;
+            --secondary-color: #F0F8FF;
+            --accent-color: #FFD700;
+            --background-color: #F8FAFD;
+            --text-color: #333;
+            --card-bg: white;
+            --card-shadow: rgba(0, 0, 0, 0.1);
+            --header-bg: linear-gradient(135deg, #6A5ACD, #836FFF);
+            --navbar-bg: rgba(255, 255, 255, 0.3);
+            --glass-blur: blur(15px);
+            --font-family: 'Poppins', sans-serif;
+        }
+
+        /* DARK THEME */
+        [data-theme="dark"] {
+            --primary-color: #483D8B;
+            --secondary-color: #2C2C54;
+            --accent-color: #F39C12;
+            --background-color: #1E1E2F;
+            --text-color: #E0E0E0;
+            --card-bg: #252542;
+            --card-shadow: rgba(255, 255, 255, 0.1);
+            --header-bg: linear-gradient(135deg, #483D8B, #362D66);
+            --navbar-bg: rgba(40, 40, 55, 0.7);
+        }
+
+        /* =============================
+           GLOBAL STYLES
+           ============================= */
+        body {
+            font-family: var(--font-family);
+            margin: 0;
+            padding: 0;
+            background: var(--background-color);
+            color: var(--text-color);
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        /* =============================
+           GLASSMORPHIC NAVIGATION
+           ============================= */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--navbar-bg);
+            backdrop-filter: var(--glass-blur);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0px 4px 10px var(--card-shadow);
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: var(--accent-color);
+        }
+
+        /* =============================
+           HERO SECTION (FULL WIDTH)
+           ============================= */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: var(--header-bg);
+            color: white;
+            border-bottom-left-radius: 80px 40px;
+            border-bottom-right-radius: 80px 40px;
+            box-shadow: 0px 4px 10px var(--card-shadow);
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 18px;
+            color: white;
+            background: var(--primary-color);
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn:hover {
+            background: var(--accent-color);
+            transform: scale(1.05);
+        }
+
+        /* =============================
+           FEATURE CARDS (NEW ANIMATIONS)
+           ============================= */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            padding: 40px 20px;
+            justify-content: center;
+        }
+
+        .idea-card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0px 8px 20px var(--card-shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .idea-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 25px var(--card-shadow);
+        }
+
+        /* =============================
+           LIVE NOTIFICATION BAR
+           ============================= */
+        .notification-bar {
+            background: var(--accent-color);
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            color: black;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        /* =============================
+           FOOTER (ROUNDED DESIGN)
+           ============================= */
+        .footer {
+            background: var(--header-bg);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 14px;
+            border-top-left-radius: 50% 20px;
+            border-top-right-radius: 50% 20px;
+            margin-top: 60px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Browse Ideas</a>
+        <a href="#">Blog</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <h1>Turn Your Ideas into Income</h1>
+        <p>Explore flexible, profitable business ideas that fit your lifestyle.</p>
+        <a href="#" class="btn">Get Started</a>
+    </div>
+
+    <!-- LIVE NOTIFICATION -->
+    <div class="notification-bar">📢 New Idea Alert: "Freelance VA" just added! 🔥</div>
+
+    <!-- IDEA CARDS -->
+    <div class="grid-container">
+        <div class="idea-card" onclick="showIdeaDetails('Selling Printables on Etsy')">
+            <h3>📌 Selling Printables on Etsy</h3>
+            <p>Create & sell downloadable planners, checklists, and more.</p>
+        </div>
+
+        <div class="idea-card" onclick="showIdeaDetails('Freelance Virtual Assistant')">
+            <h3>📌 Freelance Virtual Assistant</h3>
+            <p>Help small businesses with admin tasks from home.</p>
+        </div>
+        <div class="idea-card" onclick="showIdeaDetails('Selling Printables on Etsy')">
+            <h3>📌 Selling Printables on Etsy</h3>
+            <p>Create & sell downloadable planners, checklists, and more.</p>
+        </div>
+
+        <div class="idea-card" onclick="showIdeaDetails('Freelance Virtual Assistant')">
+            <h3>📌 Freelance Virtual Assistant</h3>
+            <p>Help small businesses with admin tasks from home.</p>
+        </div>
+        <div class="idea-card" onclick="showIdeaDetails('Selling Printables on Etsy')">
+            <h3>📌 Selling Printables on Etsy</h3>
+            <p>Create & sell downloadable planners, checklists, and more.</p>
+        </div>
+
+        <div class="idea-card" onclick="showIdeaDetails('Freelance Virtual Assistant')">
+            <h3>📌 Freelance Virtual Assistant</h3>
+            <p>Help small businesses with admin tasks from home.</p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        © 2025 Business Ideas for Moms - All Rights Reserved
+    </div>
+
+    <script>
+        function showIdeaDetails(idea) {
+            alert("Navigating to details page for: " + idea);
+        }
+    </script>
+
+</body>
+</html>

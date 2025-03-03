@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Ideas</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 30%;
+      background: white;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      overflow-y: auto;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+    }
+
+    .filters {
+      margin-bottom: 20px;
+    }
+
+    .filters h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .filters button {
+      background: #FF6F61;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      margin: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .filters button:hover {
+      background: #FF4A3A;
+    }
+
+    .mini-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .mini-card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .mini-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .mini-card img {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .mini-card h4 {
+      font-size: 1rem;
+      margin: 10px 0 5px;
+    }
+
+    .mini-card p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    /* Content Area */
+    .content {
+      width: 70%;
+      padding: 20px;
+      background: white;
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .content.hidden {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+
+    .blueprint {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .blueprint img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .blueprint h2 {
+      font-size: 2rem;
+      margin: 20px 0 10px;
+    }
+
+    .blueprint p {
+      font-size: 1rem;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .blueprint h3 {
+      font-size: 1.5rem;
+      margin: 20px 0 10px;
+    }
+
+    .blueprint ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    .blueprint ul li {
+      margin: 10px 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        box-shadow: none;
+      }
+
+      .content {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="filters">
+      <h3>Filters</h3>
+      <button data-filter="all">All</button>
+      <button data-filter="crafts">Crafts</button>
+      <button data-filter="services">Services</button>
+      <button data-filter="food">Food</button>
+      <button data-filter="digital">Digital</button>
+    </div>
+    <div class="mini-cards">
+      <!-- Mini Card 1 -->
+      <div class="mini-card" data-category="crafts" data-tags="low-cost beginner-friendly">
+        <img src="https://via.placeholder.com/300x100.png?text=Handcrafted+Baskets" alt="Handcrafted Baskets">
+        <h4>Handcrafted Baskets</h4>
+        <p>Turn your crafting skills into income.</p>
+      </div>
+      <!-- Mini Card 2 -->
+      <div class="mini-card" data-category="services" data-tags="low-cost flexible">
+        <img src="https://via.placeholder.com/300x100.png?text=Dog+Walking" alt="Dog Walking">
+        <h4>Dog Walking</h4>
+        <p>Start a dog walking service in your neighborhood.</p>
+      </div>
+      <!-- Mini Card 3 -->
+      <div class="mini-card" data-category="food" data-tags="beginner-friendly">
+        <img src="https://via.placeholder.com/300x100.png?text=Food+Preparation" alt="Food Preparation">
+        <h4>Food Preparation</h4>
+        <p>Prepare healthy meals for busy families.</p>
+      </div>
+      <!-- Add more mini cards as needed -->
+    </div>
+  </div>
+
+  <!-- Content Area -->
+  <div class="content">
+    <div class="blueprint">
+      <img src="https://via.placeholder.com/800x300.png?text=Business+Blueprint" alt="Business Blueprint">
+      <h2>Handcrafted Baskets</h2>
+      <p>Turn your crafting skills into income. Learn how to source materials, create products, and sell locally or online.</p>
+      <h3>Step-by-Step Guide</h3>
+      <ul>
+        <li>Gather materials like reeds, ribbons, and tools.</li>
+        <li>Create unique basket designs.</li>
+        <li>Market your products through social media and local markets.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    const miniCards = document.querySelectorAll('.mini-card');
+    const content = document.querySelector('.content');
+    const filters = document.querySelectorAll('.filters button');
+
+    // Smooth transition when clicking a mini card
+    miniCards.forEach(card => {
+      card.addEventListener('click', () => {
+        // Hide content with fade-out and slide effect
+        content.classList.add('hidden');
+        setTimeout(() => {
+          // Update content (simulated here)
+          const title = card.querySelector('h4').textContent;
+          const description = card.querySelector('p').textContent;
+          const blueprint = document.querySelector('.blueprint');
+          blueprint.querySelector('h2').textContent = title;
+          blueprint.querySelector('p').textContent = description;
+
+          // Show content with fade-in and slide effect
+          content.classList.remove('hidden');
+        }, 500); // Match transition duration
+      });
+    });
+
+    // Filter functionality
+    filters.forEach(filter => {
+      filter.addEventListener('click', () => {
+        const category = filter.getAttribute('data-filter');
+        miniCards.forEach(card => {
+          if (category === 'all' || card.getAttribute('data-category') === category) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
