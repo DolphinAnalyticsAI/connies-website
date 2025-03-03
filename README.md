@@ -2,7 +2,40 @@
 
 This project is a website designed to inspire and empower single moms and stay-at-home housewives to start their own home-based businesses. The homepage features a warm, intuitive, and emotionally resonant experience, crafted to guide users seamlessly through the journey of discovering and starting their dream business.
 
-Refer to the documents in the `/requirements` folder for detailed design and functionality specifications.
+Got it! Based on your context and the mention of Hugo, here's the updated **Website Technical Summary** section:
+
+---
+
+## **Website Technical Summary**
+The website is built using **Hugo**, a fast and flexible static site generator, ensuring a lightweight and performant experience. Key tools and technologies include:
+
+- **Static Site Generator:** Hugo for building and managing content.
+- **Frontend:** HTML, CSS, and JavaScript for interactivity and styling.
+- **Styling:** SCSS or CSS-in-JS for modular and maintainable styles.
+- **Responsiveness:** Mobile-first design with media queries for seamless cross-device compatibility.
+- **Animations:** CSS transitions and lightweight JavaScript for smooth interactions.
+- **Accessibility:** WCAG-compliant design practices for inclusivity.
+- **Version Control:** Git for collaboration and branch management.
+
+---
+
+## **Site Structure**
+The website will include the following key pages:
+
+1. **Homepage: Ex. home_mockup.html**
+   - Features a warm, inviting hero section with a motivational headline and call-to-action button.
+   - Displays a grid of business idea cards, each with an image, title, description, and a "Learn More" button.
+   - Designed to evoke hope, clarity, and empowerment through relatable visuals and intuitive navigation.
+
+2. **Browse Details Page: Ex. detail_mockup.html**
+   - Provides detailed information about specific business ideas.
+   - Includes step-by-step guidance, tips, and resources to help users get started.
+
+For reference, see the example HTML files in the `/requirements` folder:
+- `home_mockup.html`
+- `detail_mockup.html`
+
+---
 
 ## Site Location
 The developer will use the `/site` subfolder to add their site files for hugo site.
@@ -44,9 +77,7 @@ Developers must **not** use the `main` branch directly. Instead, follow these st
 
 ---
 
-This update ensures the repository name (`connies-website`) is correctly referenced and the instructions remain clear and actionable. 🚀
-
-DISREGARD THE LEGACY FOLDERS
+## DISREGARD THE LEGACY FOLDERS
 `/docs`
 `/mockups`
 
