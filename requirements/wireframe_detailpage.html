@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Business Ideas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* Header */
+        header {
+            border: 2px solid #ccc;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            border: 1px solid #999;
+            padding: 10px 20px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-item {
+            border: 1px solid #999;
+            padding: 8px 16px;
+        }
+        /* Integrated Header and Filters */
+        .page-header {
+            border: 2px solid #ccc;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .header-top {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .page-title {
+            border: 1px solid #999;
+            padding: 10px 15px;
+            font-size: 20px;
+            margin-right: 20px;
+            flex: 0 0 auto;
+        }
+        .filters {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            flex: 1;
+        }
+        .filter {
+            border: 1px solid #999;
+            padding: 8px 12px;
+            flex-grow: 0;
+        }
+        .search-bar {
+            width: 100%;
+            border: 1px solid #999;
+            padding: 8px 12px;
+            margin-top: 5px;
+        }
+        /* Ideas Grid */
+        .ideas-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px 0 30px;
+        }
+        .idea-card {
+            border: 2px solid #ccc;
+            display: flex;
+            flex-direction: column;
+        }
+        .idea-header {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+        }
+        .idea-title {
+            border: 1px solid #999;
+            padding: 6px 8px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .idea-description {
+            border: 1px solid #999;
+            padding: 6px 8px;
+            font-size: 14px;
+            min-height: 40px;
+        }
+        .idea-meta {
+            padding: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .meta-item {
+            width: calc(50% - 4px);
+            display: flex;
+            font-size: 13px;
+        }
+        .meta-label {
+            background-color: #eee;
+            padding: 4px 6px;
+            width: 42%;
+            border: 1px solid #ccc;
+            border-right: none;
+            font-weight: bold;
+        }
+        .meta-value {
+            padding: 4px 6px;
+            width: 58%;
+            border: 1px solid #ccc;
+        }
+        .idea-tags {
+            padding: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        .tag {
+            border: 1px solid #999;
+            padding: 3px 8px;
+            font-size: 12px;
+        }
+        .idea-footer {
+            padding: 12px;
+            text-align: center;
+            border-top: 1px solid #eee;
+        }
+        .view-details {
+            border: 1px solid #999;
+            padding: 8px;
+            display: inline-block;
+            width: 100%;
+            font-size: 14px;
+        }
+        /* Footer */
+        footer {
+            border: 2px solid #ccc;
+            padding: 40px 20px;
+            margin-top: 20px;
+        }
+        .footer-columns {
+            display: flex;
+            gap: 40px;
+        }
+        .footer-column {
+            flex: 1;
+            border: 1px solid #999;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">Site Name</div>
+            <nav>
+                <div class="nav-item">Home</div>
+                <div class="nav-item">Ideas</div>
+                <div class="nav-item">Success Stories</div>
+                <div class="nav-item">About</div>
+            </nav>
+        </header>
+
+        <!-- Integrated Header and Filters -->
+        <section class="page-header">
+            <div class="header-top">
+                <div class="page-title">Browse Business Ideas</div>
+                <div class="filters">
+                    <div class="filter">Categories ▼</div>
+                    <div class="filter">Tags ▼</div>
+                </div>
+            </div>
+            <div class="search-bar">Search business ideas...</div>
+        </section>
+
+        <!-- Ideas Grid -->
+        <div class="ideas-grid">
+            <!-- Idea Card 1 -->
+            <div class="idea-card">
+                <div class="idea-header">
+                    <div class="idea-title">Dog Walker</div>
+                    <div class="idea-description">Start a dog walking service for busy pet owners in your neighborhood.</div>
+                </div>
+                <div class="idea-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Categories</div>
+                        <div class="meta-value">Pet Services</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Effort</div>
+                        <div class="meta-value">Moderate</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Income</div>
+                        <div class="meta-value">$500-$2000/mo</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Requirements</div>
+                        <div class="meta-value">Pet handling</div>
+                    </div>
+                </div>
+                <div class="idea-tags">
+                    <div class="tag">Pets</div>
+                    <div class="tag">Service</div>
+                    <div class="tag">Part-time</div>
+                </div>
+                <div class="idea-footer">
+                    <div class="view-details">View Details</div>
+                </div>
+            </div>
+
+            <!-- Idea Card 2 -->
+            <div class="idea-card">
+                <div class="idea-header">
+                    <div class="idea-title">Gardening Service</div>
+                    <div class="idea-description">Offer professional gardening and lawn care services to homeowners.</div>
+                </div>
+                <div class="idea-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Categories</div>
+                        <div class="meta-value">Home Services</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Effort</div>
+                        <div class="meta-value">High</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Income</div>
+                        <div class="meta-value">$1000-$4000/mo</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Requirements</div>
+                        <div class="meta-value">Tools, knowledge</div>
+                    </div>
+                </div>
+                <div class="idea-tags">
+                    <div class="tag">Outdoors</div>
+                    <div class="tag">Seasonal</div>
+                    <div class="tag">Physical</div>
+                </div>
+                <div class="idea-footer">
+                    <div class="view-details">View Details</div>
+                </div>
+            </div>
+
+            <!-- Idea Card 3 -->
+            <div class="idea-card">
+                <div class="idea-header">
+                    <div class="idea-title">Freelance Writing</div>
+                    <div class="idea-description">Write content for websites, blogs, and businesses as a freelancer.</div>
+                </div>
+                <div class="idea-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Categories</div>
+                        <div class="meta-value">Creative, Digital</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Effort</div>
+                        <div class="meta-value">Low</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Income</div>
+                        <div class="meta-value">$500-$5000/mo</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Requirements</div>
+                        <div class="meta-value">Writing skills</div>
+                    </div>
+                </div>
+                <div class="idea-tags">
+                    <div class="tag">Remote</div>
+                    <div class="tag">Flexible</div>
+                    <div class="tag">Creative</div>
+                </div>
+                <div class="idea-footer">
+                    <div class="view-details">View Details</div>
+                </div>
+            </div>
+
+            <!-- Idea Card 4 -->
+            <div class="idea-card">
+                <div class="idea-header">
+                    <div class="idea-title">Food Delivery Service</div>
+                    <div class="idea-description">Start a local food delivery service for restaurants without delivery options.</div>
+                </div>
+                <div class="idea-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Categories</div>
+                        <div class="meta-value">Food, Delivery</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Effort</div>
+                        <div class="meta-value">High</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Income</div>
+                        <div class="meta-value">$1500-$6000/mo</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Requirements</div>
+                        <div class="meta-value">Vehicle, phone</div>
+                    </div>
+                </div>
+                <div class="idea-tags">
+                    <div class="tag">Local</div>
+                    <div class="tag">Transportation</div>
+                    <div class="tag">Food</div>
+                </div>
+                <div class="idea-footer">
+                    <div class="view-details">View Details</div>
+                </div>
+            </div>
+
+            <!-- Idea Card 5 -->
+            <div class="idea-card">
+                <div class="idea-header">
+                    <div class="idea-title">Social Media Manager</div>
+                    <div class="idea-description">Manage social media accounts for small businesses and entrepreneurs.</div>
+                </div>
+                <div class="idea-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Categories</div>
+                        <div class="meta-value">Digital Marketing</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Effort</div>
+                        <div class="meta-value">Moderate</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Income</div>
+                        <div class="meta-value">$1000-$5000/mo</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Requirements</div>
+                        <div class="meta-value">Marketing skills</div>
+                    </div>
+                </div>
+                <div class="idea-tags">
+                    <div class="tag">Digital</div>
+                    <div class="tag">Marketing</div>
+                    <div class="tag">Remote</div>
+                </div>
+                <div class="idea-footer">
+                    <div class="view-details">View Details</div>
+                </div>
+            </div>
+
+            <!-- Idea Card 6 -->
+            <div class="idea-card">
+                <div class="idea-header">
+                    <div class="idea-title">Online Tutoring</div>
+                    <div class="idea-description">Provide tutoring services online in your area of expertise.</div>
+                </div>
+                <div class="idea-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Categories</div>
+                        <div class="meta-value">Education</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Effort</div>
+                        <div class="meta-value">Moderate</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Income</div>
+                        <div class="meta-value">$800-$3000/mo</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Requirements</div>
+                        <div class="meta-value">Subject expertise</div>
+                    </div>
+                </div>
+                <div class="idea-tags">
+                    <div class="tag">Education</div>
+                    <div class="tag">Remote</div>
+                    <div class="tag">Flexible</div>
+                </div>
+                <div class="idea-footer">
+                    <div class="view-details">View Details</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <div>About Us</div>
+                    <div>Our Mission</div>
+                    <div>Contact</div>
+                    <div>Careers</div>
+                    <div>Privacy Policy</div>
+                </div>
+                <div class="footer-column">
+                    <div>Resources</div>
+                    <div>Blog</div>
+                    <div>Business Tools</div>
+                    <div>Newsletter</div>
+                    <div>Support</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

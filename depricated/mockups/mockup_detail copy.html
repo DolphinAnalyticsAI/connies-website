@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Walking Service - Business Idea Details | VentureStart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #3366CC;
+            --primary-light: #5580D7;
+            --primary-dark: #254E99;
+            --primary-bg: rgba(51, 102, 204, 0.05);
+            --secondary: #FF9933;
+            --secondary-light: #FFAD5C;
+            --secondary-dark: #E67300;
+            --secondary-bg: rgba(255, 153, 51, 0.05);
+            --accent1: #66CC99;
+            --accent1-light: #8DDDB5;
+            --accent1-bg: rgba(102, 204, 153, 0.05);
+            --accent2: #9966CC;
+            --accent2-light: #B288DB;
+            --accent2-bg: rgba(153, 102, 204, 0.05);
+            --accent3: #CC6666;
+            --accent3-light: #DB8888;
+            --accent3-bg: rgba(204, 102, 102, 0.05);
+            --accent4: #66CCCC;
+            --accent4-light: #88DBDB;
+            --accent4-bg: rgba(102, 204, 204, 0.05);
+            --white: #FFFFFF;
+            --off-white: #F8F9FA;
+            --light-gray: #E9ECEF;
+            --medium-gray: #CED4DA;
+            --dark-gray: #495057;
+            --charcoal: #343A40;
+            --black: #212529;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--dark-gray);
+            background-color: var(--off-white);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4, h5 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: var(--charcoal);
+            letter-spacing: -0.02em;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            font-size: 1.75rem;
+            line-height: 1.3;
+            margin: 2rem 0 1rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 50px;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--accent2) 100%);
+            border-radius: 3px;
+        }
+        
+        h3 {
+            font-size: 1.25rem;
+            line-height: 1.4;
+            margin: 1.5rem 0 1rem;
+            color: var(--primary-dark);
+        }
+        
+        h4 {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin: 1.25rem 0 0.75rem;
+            color: var(--charcoal);
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+        
+        .content-text {
+            font-family: 'Merriweather', serif;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--charcoal);
+        }
+        
+        .content-text p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .content-text ul, .content-text ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        
+        .content-text li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent2) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: inline-block;
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-icon {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent2) 60%);
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 20px;
+        }
+        
+        nav {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .nav-item {
+            text-decoration: none;
+            color: var(--dark-gray);
+            font-weight: 600;
+            font-size: 15px;
+            padding: 8px 0;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--accent2) 100%);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-item:hover {
+            color: var(--primary);
+        }
+        
+        .nav-item:hover::after,
+        .nav-item.active::after {
+            width: 100%;
+        }
+        
+        .nav-item.active {
+            color: var(--primary);
+        }
+        
+        .nav-item.cta {
+            background-color: var(--primary);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-item.cta:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(51, 102, 204, 0.2);
+        }
+        
+        .nav-item.cta::after {
+            display: none;
+        }
+        
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--dark-gray);
+        }
+        
+        /* Breadcrumbs */
+        .breadcrumbs {
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb-item {
+            color: var(--dark-gray);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .breadcrumb-item:hover {
+            color: var(--primary);
+        }
+        
+        .breadcrumb-separator {
+            margin: 0 10px;
+            color: var(--medium-gray);
+        }
+        
+        .breadcrumb-current {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        /* Business Idea Header */
+        .idea-header {
+            background-color: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            padding: 30px;
+            margin-bottom: 40px;
+            display: flex;
+            gap: 40px;
+        }
+        
+        .idea-image {
+            flex: 0 0 300px;
+            height: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent2) 100%);
+            position: relative;
+        }
+        
+        .idea-image-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        
+        .idea-info {
+            flex: 1;
+        }
+        
+        .idea-meta-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .idea-meta-badge {
+            padding: 6px 12px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .badge-category {
+            background-color: var(--primary-bg);
+            color: var(--primary);
+        }
+        
+        .badge-effort {
+            background-color: var(--accent2-bg);
+            color: var(--accent2);
+        }
+        
+        .badge-income {
+            background-color: var(--secondary-bg);
+            color: var(--secondary);
+        }
+        
+        .badge-requirements {
+            background-color: var(--accent3-bg);
+            color: var(--accent3);
+        }
+        
+        .idea-title {
+            margin-bottom: 15px;
+        }
+        
+        .idea-description {
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+            color: var(--dark-gray);
+        }
+        
+        .idea-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .idea-action-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .action-primary {
+            background-color: var(--primary);
+            color: white;
+            box-shadow: 0 4px 10px rgba(51, 102, 204, 0.2);
+        }
+        
+        .action-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(51, 102, 204, 0.3);
+        }
+        
+        .action-secondary {
+            background-color: var(--white);
+            color: var(--primary);
+            border: 1px solid var(--primary);
+        }
+        
+        .action-secondary:hover {
+            background-color: var(--primary-bg);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .idea-share {
+            margin-top: 20px;
+        }
+        
+        .share-label {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--charcoal);
+            display: block;
+        }
+        
+        .share-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .share-button {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+        
+        .share-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .share-facebook {
+            background-color: #3b5998;
+        }
+        
+        .share-twitter {
+            background-color: #1da1f2;
+        }
+        
+        .share-linkedin {
+            background-color: #0077b5;
+        }
+        
+        .share-pinterest {
+            background-color: #bd081c;
+        }
+        
+        .share-email {
+            background-color: var(--accent3);
+        }
+        
+        /* Main Content Layout */
+        .content-wrapper {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            flex: 0 0 280px;
+            position: sticky;
+            top: 90px;
+            align-self: flex-start;
+        }
+        
+        .sidebar-widget {
+            background-color: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+        
+        .widget-title {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--light-gray);
+            color: var(--charcoal);
+        }
+        
+        /* TOC Widget */
+        .toc-list {
+            list-style: none;
+        }
+        
+        .toc-item {
+            margin-bottom: 12px;
+        }
+        
+        .toc-link {
+            text-decoration: none;
+            color: var(--dark-gray);
+            display: block;
+            padding: 5px 0;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+            border-left: 2px solid transparent;
+            padding-left: 10px;
+        }
+        
+        .toc-link:hover {
+            color: var(--primary);
+            border-left-color: var(--primary);
+            padding-left: 15px;
+        }
+        
+        .toc-link.active {
+            color: var(--primary);
+            border-left-color: var(--primary);
+            font-weight: 600;
+            padding-left: 15px;
+        }
+        
+        /* Social Widget */
+        .social-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .social-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 6px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .social-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Related Ideas Widget */
+        .related-idea {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .related-idea:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .related-idea-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 6px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 0.8rem;
+        }
+        
+        .related-1 {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+        }
+        
+        .related-2 {
+            background: linear-gradient(135deg, var(--accent1) 0%, var(--accent1-light) 100%);
+        }
+        
+        .related-3 {
+            background: linear-gradient(135deg, var(--accent2) 0%, var(--accent2-light) 100%);
+        }
+        
+        .related-idea-info {
+            flex: 1;
+        }
+        
+        .related-idea-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: var(--charcoal);
+            text-decoration: none;
+            display: block;
+            transition: color 0.3s ease;
+        }
+        
+        .related-idea-title:hover {
+            color: var(--primary);
+        }
+        
+        .related-idea-category {
+            font-size: 0.8rem;
+            color: var(--primary);
+        }
+        
+        /* Question Widget */
+        .question-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .form-field {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .form-label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--charcoal);
+        }
+        
+        .form-input, .form-textarea {
+            padding: 10px;
+            border: 1px solid var(--medium-gray);
+            border-radius: 6px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-input:focus, .form-textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(51, 102, 204, 0.1);
+        }
+        
+        .form-textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        .form-submit {
+            padding: 10px;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .form-submit:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(51, 102, 204, 0.2);
+        }
+        
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            background-color: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            padding: 40px;
+        }
+        
+        .content-notice {
+            background-color: var(--accent1-bg);
+            border-left: 4px solid var(--accent1);
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+        
+        /* Markdown Section Styling */
+        .markdown-section {
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .markdown-section:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .section-anchor {
+            display: block;
+            position: relative;
+            top: -100px;
+            visibility: hidden;
+        }
+        
+        /* Navigation */
+        .idea-navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid var(--light-gray);
+        }
+        
+        .nav-previous, .nav-next {
+            display: flex;
+            flex-direction: column;
+            max-width: 45%;
+        }
+        
+        .nav-direction {
+            font-size: 0.9rem;
+            color: var(--dark-gray);
+            margin-bottom: 5px;
+        }
+        
+        .nav-title {
+            font-weight: 600;
+            color: var(--primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-title:hover {
+            color: var(--primary-dark);
+        }
+        
+        .nav-next {
+            text-align: right;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 99;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Mobile Sidebar */
+        .mobile-sidebar-toggle {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            z-index: 99;
+            border: none;
+            cursor: pointer;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .idea-header {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .idea-image {
+                flex: 0 0 auto;
+                width: 100%;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+        
+        @media (max-width: 900px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                flex: 0 0 auto;
+                position: static;
+                width: 100%;
+                height: auto;
+                display: none;
+            }
+            
+            .sidebar.mobile-visible {
+                display: block;
+            }
+            
+            .mobile-sidebar-toggle {
+                display: flex;
+            }
+            
+            .nav-item:not(.cta) {
+                display: none;
+            }
+            
+            .menu-toggle {
+                display: block;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .idea-actions {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .idea-action-button {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .breadcrumbs {
+                flex-wrap: wrap;
+            }
+            
+            .main-content {
+                padding: 25px 20px;
+            }
+            
+            .idea-navigation {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .nav-previous, .nav-next {
+                max-width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <a href="#" class="logo">
+                    <div class="logo-icon">V</div>
+                    VentureStart
+                </a>
+                <nav>
+                    <a href="#" class="nav-item">Home</a>
+                    <a href="#" class="nav-item active">Ideas</a>
+                    <a href="#" class="nav-item">Success Stories</a>
+                    <a href="#" class="nav-item">About</a>
+                    <a href="#" class="nav-item cta">Get Started</a>
+                    <button class="menu-toggle">☰</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <a href="#" class="breadcrumb-item">Home</a>
+            <span class="breadcrumb-separator">/</span>
+            <a href="#" class="breadcrumb-item">Business Ideas</a>
+            <span class="breadcrumb-separator">/</span>
+            <a href="#" class="breadcrumb-item">Pet Services</a>
+            <span class="breadcrumb-separator">/</span>
+            <span class="breadcrumb-current">Dog Walking Service</span>
+        </div>
+        
+        <!-- Business Idea Header -->
+        <section class="idea-header">
+            <div class="idea-image">
+                <div class="idea-image-content">
+                    Dog Walking Service Image
+                </div>
+            </div>
+            <div class="idea-info">
+                <div class="idea-meta-badges">
+                    <span class="idea-meta-badge badge-category">Pet Services</span>
+                    <span class="idea-meta-badge badge-effort">Moderate Effort</span>
+                    <span class="idea-meta-badge badge-income">$500-$2000/mo</span>
+                    <span class="idea-meta-badge badge-requirements">Pet handling skills</span>
+                </div>
+                <h1 class="idea-title">Dog Walking Service</h1>
+                <p class="idea-description">Start a dog walking service for busy pet owners in your neighborhood with minimal startup costs and flexible scheduling. This business idea allows you to combine a love for animals with a profitable, scalable service that meets a real need in your community.</p>
+                
+                <div class="idea-actions">
+                    <a href="#" class="idea-action-button action-primary">Start This Business</a>
+                    <a href="#" class="idea-action-button action-secondary">Download Business Plan</a>
+                    <a href="#" class="idea-action-button action-secondary">Save For Later</a>
+                </div>
+                
+                <div class="idea-share">
+                    <span class="share-label">Share this opportunity:</span>
+                    <div class="share-buttons">
+                        <a href="#" class="share-button share-facebook" title="Share on Facebook">F</a>
+                        <a href="#" class="share-button share-twitter" title="Share on Twitter">T</a>
+                        <a href="#" class="share-button share-linkedin" title="Share on LinkedIn">L</a>
+                        <a href="#" class="share-button share-pinterest" title="Share on Pinterest">P</a>
+                        <a href="#" class="share-button share-email" title="Share via Email">E</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+ <!-- Main Content -->
+<main class="main-content">
+    <div class="content-notice">
+        <strong>Note for developers:</strong> This content area will be populated by Hugo markdown files. The sections below demonstrate how markdown content will be styled and organized.
+    </div>
+    
+    <!-- Overview Section -->
+    <div id="overview" class="section-anchor"></div>
+    <section class="markdown-section content-text">
+        <h2>Overview</h2>
+        <p>A dog walking service offers a simple yet effective solution for busy pet owners who want to ensure their dogs get exercise and bathroom breaks during the day. With minimal startup costs and flexible scheduling, this business allows you to combine a love for animals with a profitable, scalable service.</p>
+        
+        <p>Dog walking services typically involve visiting clients' homes, taking their pets for walks, providing fresh water, and sometimes administering medications or performing other pet care tasks. Many successful dog walking businesses evolve to include additional services such as pet sitting, dog boarding, or specialized care for senior or special needs pets.</p>
+        
+        <p>This business model is ideal for animal lovers with some experience handling dogs, and can be started part-time while maintaining another job or full-time for higher income potential. As your clientele grows, you can either scale by hiring additional walkers or maintain a smaller, premium service for a select group of clients.</p>
+    </section>
+    
+    <!-- Quick Start Section -->
+    <div id="quick-start" class="section-anchor"></div>
+    <section class="markdown-section content-text">
+        <h2>Quick Start Guide</h2>
+        
+        <p>Want to get your dog walking business up and running quickly? Follow these steps to launch in the next 2-4 weeks:</p>
+        
+        <h3>Week 1: Research and Planning</h3>
+        <ul>
+            <li><strong>Research local competition</strong> - Identify other dog walkers in your area, their pricing, services, and business model.</li>
+            <li><strong>Define your service area</strong> - Start small with a 2-3 mile radius around your home to minimize travel time between clients.</li>
+            <li><strong>Set your rates</strong> - Research competitive rates in your area. Typically $15-25 for a 30-minute walk, depending on your location.</li>
+            <li><strong>Create a basic business plan</strong> - Outline your services, pricing structure, target market, and goals.</li>
+        </ul>
+        
+        <h3>Week 2: Business Setup</h3>
+        <ul>
+            <li><strong>Choose a business name</strong> - Select something memorable that conveys trust and professionalism.</li>
+            <li><strong>Register your business</strong> - Check local requirements for business licenses and permits.</li>
+            <li><strong>Get insurance</strong> - Pet care insurance and bonding are essential for protection.</li>
+            <li><strong>Set up a business bank account</strong> - Keep personal and business finances separate.</li>
+            <li><strong>Purchase basic supplies</strong> - Leashes, waste bags, treat pouch, first aid kit, etc.</li>
+        </ul>
+        
+        <h3>Week 3: Marketing Preparation</h3>
+        <ul>
+            <li><strong>Create a simple website</strong> - Include your services, rates, about page, and contact information.</li>
+            <li><strong>Set up social media accounts</strong> - Focus on platforms where pet owners are active (Instagram, Facebook).</li>
+            <li><strong>Design business cards and flyers</strong> - Use professional, appealing design with clear contact information.</li>
+            <li><strong>Create client forms</strong> - Develop service agreements, pet information forms, and emergency contact forms.</li>
+        </ul>
+        
+        <h3>Week 4: Client Acquisition</h3>
+        <ul>
+            <li><strong>Distribute marketing materials</strong> - Post flyers at pet stores, veterinary offices, grooming salons, and community bulletin boards.</li>
+            <li><strong>Network with local pet businesses</strong> - Build relationships with vets, groomers, and pet store owners for referrals.</li>
+            <li><strong>Offer free or discounted walks</strong> - Provide initial walks at reduced rates to build clientele and get reviews.</li>
+            <li><strong>Join local online communities</strong> - Participate in neighborhood social media groups and pet owner forums.</li>
+        </ul>
+        
+        <h4>Quick Start Checklist</h4>
+        <ul>
+            <li>Research competition and set competitive rates</li>
+            <li>Register business and obtain insurance</li>
+            <li>Purchase necessary supplies</li>
+            <li>Create basic marketing materials and online presence</li>
+            <li>Network with local pet businesses for referrals</li>
+            <li>Offer promotional rates to initial clients</li>
+            <li>Establish clear policies and procedures</li>
+            <li>Develop a schedule and booking system</li>
+        </ul>
+    </section>
+    
+    <!-- 30 Day Plan Section -->
+    <div id="30-day-plan" class="section-anchor"></div>
+    <section class="markdown-section content-text">
+        <h2>30 Day Business Launch Plan</h2>
+        
+        <p>This comprehensive 30-day plan guides you through launching your dog walking business with a strategic approach to build a solid foundation.</p>
+        
+        <h3>Days 1-5: Research and Foundation</h3>
+        <ul>
+            <li><strong>Day 1:</strong> Conduct market research on local dog walking services and pet demographics.</li>
+            <li><strong>Day 2:</strong> Define your unique selling proposition and service offerings.</li>
+            <li><strong>Day 3:</strong> Research legal requirements and insurance options.</li>
+            <li><strong>Day 4:</strong> Create a detailed business plan and financial projections.</li>
+            <li><strong>Day 5:</strong> Finalize your business name and check domain availability.</li>
+        </ul>
+        
+        <h3>Days 6-10: Legal Setup and Basic Infrastructure</h3>
+        <ul>
+            <li><strong>Day 6:</strong> Register your business name and apply for necessary permits.</li>
+            <li><strong>Day 7:</strong> Purchase liability insurance and bonding.</li>
+            <li><strong>Day 8:</strong> Set up business bank account and payment processing.</li>
+            <li><strong>Day 9:</strong> Purchase essential equipment and supplies.</li>
+            <li><strong>Day 10:</strong> Develop service agreements and client information forms.</li>
+        </ul>
+        
+        <h3>Days 11-15: Brand Development and Online Presence</h3>
+        <ul>
+            <li><strong>Day 11:</strong> Design your logo and brand identity.</li>
+            <li><strong>Day 12:</strong> Register your domain name and set up business email.</li>
+            <li><strong>Day 13:</strong> Create a simple website with essential information.</li>
+            <li><strong>Day 14:</strong> Set up social media profiles (Instagram, Facebook, Nextdoor).</li>
+            <li><strong>Day 15:</strong> Create a Google Business profile and list your business on pet service directories.</li>
+        </ul>
+        
+        <h3>Days 16-20: Marketing Materials and Strategy</h3>
+        <ul>
+            <li><strong>Day 16:</strong> Design and order business cards and marketing materials.</li>
+            <li><strong>Day 17:</strong> Create a content calendar for social media.</li>
+            <li><strong>Day 18:</strong> Develop a neighborhood flyering strategy.</li>
+            <li><strong>Day 19:</strong> Create an email template for reaching out to potential clients.</li>
+            <li><strong>Day 20:</strong> Establish partnerships with local pet businesses.</li>
+        </ul>
+        
+        <h3>Days 21-25: Operations and Service Preparation</h3>
+        <ul>
+            <li><strong>Day 21:</strong> Develop standard operating procedures for dog walks.</li>
+            <li><strong>Day 22:</strong> Create a scheduling and booking system.</li>
+            <li><strong>Day 23:</strong> Set up accounting system and record-keeping methods.</li>
+            <li><strong>Day 24:</strong> Develop emergency protocols and contingency plans.</li>
+            <li><strong>Day 25:</strong> Create a client onboarding process and welcome package.</li>
+        </ul>
+        
+        <h3>Days 26-30: Launch and Client Acquisition</h3>
+        <ul>
+            <li><strong>Day 26:</strong> Begin local marketing efforts (distributing flyers, posting on community boards).</li>
+            <li><strong>Day 27:</strong> Reach out to personal networks to announce your business.</li>
+            <li><strong>Day 28:</strong> Contact local veterinarians and pet stores for referral partnerships.</li>
+            <li><strong>Day 29:</strong> Launch social media presence and starter promotion.</li>
+            <li><strong>Day 30:</strong> Conduct your first client consultations and trial walks.</li>
+        </ul>
+        
+        <p>By following this 30-day plan, you'll have established the essential components of a professional dog walking business and positioned yourself to begin acquiring and serving clients.</p>
+    </section>
+    
+    <!-- Additional Sections (abbreviated for the mockup) -->
+    <div id="market-analysis" class="section-anchor"></div>
+    <section class="markdown-section content-text">
+        <h2>Market Analysis</h2>
+        <p>The pet services industry has shown consistent growth, with increasing numbers of pet owners willing to spend on services like dog walking. This section would analyze the market potential, customer demographics, and growth trends in the pet care industry.</p>
+        <p><em>[This section would contain detailed market analysis content...]</em></p>
+    </section>
+    
+    <div id="startup-costs" class="section-anchor"></div>
+    <section class="markdown-section content-text">
+        <h2>Startup Costs</h2>
+        <p>One of the advantages of a dog walking business is the low initial investment required. This section would break down typical startup costs including insurance, supplies, marketing materials, and business registration.</p>
+        <p><em>[This section would contain detailed startup costs content...]</em></p>
+    </section>
+    
+    <div id="pricing-strategy" class="section-anchor"></div>
+    <section class="markdown-section content-text">
+        <h2>Pricing Strategy</h2>
+        <p>Effective pricing is crucial for profitability while remaining competitive. This section would guide you through setting your rates based on location, services offered, and local market conditions.</p>
+        <p><em>[This section would contain detailed pricing strategy content...]</em></p>
+    </section>
+    
+    <div id="marketing-tips" class="section-anchor"></div>
+    <section class="markdown-section content-text">
+        <h2>Marketing Tips</h2>
+        <p>Successful dog walking businesses require effective marketing to build a client base. This section would provide strategies for local marketing, online presence, and building referral networks.</p>
+        <p><em>[This section would contain detailed marketing content...]</em></p>
+    </section>
+    
+    <div id="scaling" class="section-anchor"></div>
+    <section class="markdown-section content-text">
+        <h2>Scaling Your Business</h2>
+        <p>As your client base grows, you'll need to decide whether to expand by hiring employees or focus on premium services. This section would outline growth strategies and considerations.</p>
+        <p><em>[This section would contain detailed scaling content...]</em></p>
+    </section>
+    
+    <div id="faqs" class="section-anchor"></div>
+    <section class="markdown-section content-text">
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about starting and running a dog walking business would be addressed here.</p>
+        <p><em>[This section would contain FAQ content...]</em></p>
+    </section>
+    
+    <div id="resources" class="section-anchor"></div>
+    <section class="markdown-section content-text">
+        <h2>Resources</h2>
+        <p>Additional resources, tools, and references for dog walking business owners would be provided here.</p>
+        <p><em>[This section would contain resources content...]</em></p>
+    </section>
+    
+    <!-- Idea Navigation -->
+    <div class="idea-navigation">
+        <div class="nav-previous">
+            <span class="nav-direction">Previous Idea</span>
+            <a href="#" class="nav-title">Pet Sitting Service</a>
+        </div>
+        <div class="nav-next">
+            <span class="nav-direction">Next Idea</span>
+            <a href="#" class="nav-title">Mobile Pet Grooming</a>
+        </div>
+    </div>
+</main>

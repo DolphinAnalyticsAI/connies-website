@@ -2,20 +2,51 @@
 
 This project is a website designed to inspire and empower single moms and stay-at-home housewives to start their own home-based businesses. The homepage features a warm, intuitive, and emotionally resonant experience, crafted to guide users seamlessly through the journey of discovering and starting their dream business.
 
-Got it! Based on your context and the mention of Hugo, here's the updated **Website Technical Summary** section:
 
----
+# Project Requirements Documentation
 
-## **Website Technical Summary**
-The website is built using **Hugo**, a fast and flexible static site generator, ensuring a lightweight and performant experience. Key tools and technologies include:
+This folder contains all the necessary files to start developing the VentureStart website. Below is a brief description of each file and its purpose:
 
-- **Static Site Generator:** Hugo for building and managing content.
-- **Frontend:** HTML, CSS, and JavaScript for interactivity and styling.
-- **Styling:** SCSS or CSS-in-JS for modular and maintainable styles.
-- **Responsiveness:** Mobile-first design with media queries for seamless cross-device compatibility.
-- **Animations:** CSS transitions and lightweight JavaScript for smooth interactions.
-- **Accessibility:** WCAG-compliant design practices for inclusivity.
-- **Version Control:** Git for collaboration and branch management.
+## Color Scheme 
+See the file `colors.txt' for hex values of color scheme.
+
+
+## Content Files
+
+- **content_home.md** - Sample content for the homepage, including section titles, marketing copy, and button text. Use this file as a reference for populating the homepage sections.
+
+- **dog-walking-service.md** - Example Hugo content file with complete front matter and markdown content for a business idea detail page. This serves as a template for all business idea pages and demonstrates the correct structure, formatting, and content organization.
+
+## Mockups
+
+- **mockup_home.html** - HTML mockup of the homepage with styling and structure. This demonstrates the visual layout, including the hero section, features section, business idea cards, and benefits section.
+
+- **mockup_listings.html** - HTML mockup of the business ideas listing page, showing the grid layout of business idea cards, filtering system, and navigation elements.
+
+- **mockup_detail.html** - HTML mockup of a detailed business idea page, showing the layout of the content area, sidebar widgets, and navigation components.
+
+## Wireframes
+
+- **wireframe_detailpage.html** - Basic wireframe for the business idea detail page showing the content structure without styling. This focuses on the positioning of elements and content hierarchy.
+
+- **wireframe_homepage.html** - Basic wireframe for the homepage showing the content structure without styling. This focuses on the layout and organization of the main sections.
+
+## Development Notes
+
+1. The website should be built using Hugo with the structure and formatting demonstrated in the content files.
+
+2. The mockups provide the visual design direction and should be implemented with responsive considerations.
+
+3. The sidebar on the detail page should include all the widgets shown in the mockup (Table of Contents, Share, Related Ideas, Question Form, etc.)
+
+4. All pages should be responsive, with special attention to the sidebar on detail pages, which should collapse on mobile devices.
+
+5. The styling should follow the color scheme shown in the mockups:
+   - Primary: #3366CC (Rich Blue)
+   - Secondary: #FF9933 (Warm Orange)
+   - Accent colors as demonstrated in the mockups
+
+Please refer to the mockups and content files for implementation details, and reach out if any clarification is needed.
 
 ---
 

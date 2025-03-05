@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design Inspiration Guide</title>
+    <style>
+        :root {
+            --primary: #16213E;
+            --secondary: #0F3460;
+            --accent: #E94560;
+            --text: #333333;
+            --background: #f5f7fa;
+            --card-bg: #ffffff;
+            --border-radius: 10px;
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--background);
+            padding-bottom: 50px;
+        }
+        
+        header {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin: 40px 0 20px;
+            text-align: center;
+            color: var(--primary);
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--secondary);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-title {
+            padding: 15px;
+            background-color: var(--primary);
+            color: white;
+            font-weight: 600;
+        }
+        
+        .card-content {
+            padding: 20px;
+        }
+        
+        .details {
+            margin-bottom: 20px;
+        }
+        
+        .detail-row {
+            display: flex;
+            margin-bottom: 8px;
+        }
+        
+        .detail-label {
+            font-weight: 600;
+            min-width: 100px;
+        }
+        
+        .example-box {
+            height: 150px;
+            margin: 15px 0;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+        
+        .color-swatch {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            vertical-align: middle;
+            margin-right: 5px;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+        
+        /* Typography Examples */
+        .elegant-editorial .example-box {
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #eee;
+        }
+        
+        .elegant-editorial h4 {
+            font-family: 'Georgia', serif;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .elegant-editorial p {
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .modern-tech .example-box {
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #eee;
+        }
+        
+        .modern-tech h4 {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 24px;
+            margin-bottom: 10px;
+            letter-spacing: -0.02em;
+        }
+        
+        .modern-tech p {
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        /* Color Schemes */
+        .nordic-frost {
+            background: linear-gradient(135deg, #829CBC 0%, #E5E9EC 100%);
+        }
+        
+        .terra-warmth {
+            background: linear-gradient(135deg, #D67D3E 0%, #F2EEE3 100%);
+        }
+        
+        .digital-neon {
+            background: linear-gradient(135deg, #0F0F1B 0%, #0F0F1B 40%, #00F0FF 100%);
+        }
+        
+        /* Layout Examples */
+        .asymmetric-grid .example-box {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 5px;
+            padding: 5px;
+            background-color: #f1f1f1;
+        }
+        
+        .asymmetric-grid .item {
+            background-color: var(--secondary);
+            opacity: 0.7;
+        }
+        
+        .asymmetric-grid .item-large {
+            grid-row: span 2;
+            background-color: var(--accent);
+        }
+        
+        .editorial-cards .example-box {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 5px;
+            padding: 5px;
+            background-color: #f1f1f1;
+        }
+        
+        .editorial-cards .feature-article {
+            grid-row: span 2;
+            background-color: var(--accent);
+        }
+        
+        .editorial-cards .article-card {
+            background-color: var(--secondary);
+            opacity: 0.7;
+        }
+        
+        /* Web Elements */
+        .glassmorphic .example-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+        }
+        
+        .glassmorphic-card {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            padding: 20px;
+            width: 80%;
+            height: 60%;
+        }
+        
+        .neumorphic .example-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #e0e5ec;
+        }
+        
+        .neumorphic-button {
+            background: #e0e5ec;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #a3b1c6, -5px -5px 10px #ffffff;
+            padding: 15px 25px;
+            border: none;
+            color: #666;
+            font-weight: bold;
+        }
+        
+        /* Branding Concepts */
+        .geometric .example-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f8f8;
+        }
+        
+        .geometric-logo {
+            width: 100px;
+            height: 100px;
+            position: relative;
+        }
+        
+        .geometric-logo .circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #2d46b9;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .geometric-logo .square {
+            width: 60px;
+            height: 60px;
+            background-color: #f8341c;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        
+        .organic .example-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f5f2ea;
+        }
+        
+        .organic-logo {
+            font-family: Georgia, serif;
+            font-size: 24px;
+            color: #5c4b37;
+            text-align: center;
+            padding: 10px 20px;
+            border-bottom: 2px solid #a24936;
+        }
+        
+        /* Navigation */
+        .navigation {
+            background-color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .nav-link {
+            padding: 8px 15px;
+            color: var(--primary);
+            text-decoration: none;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Web Design Inspiration Guide</h1>
+            <p>A curated collection of inspirational design elements for your next web project</p>
+        </div>
+    </header>
+    
+    <nav class="navigation">
+        <div class="container">
+            <div class="nav-container">
+                <a href="#typography" class="nav-link">Typography</a>
+                <a href="#colors" class="nav-link">Color Schemes</a>
+                <a href="#layouts" class="nav-link">Layouts</a>
+                <a href="#elements" class="nav-link">Web Elements</a>
+                <a href="#branding" class="nav-link">Branding</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <!-- TYPOGRAPHY SECTION -->
+        <section id="typography">
+            <h2>Typography Pairings</h2>
+            <div class="section-intro">
+                <p>Typography sets the tone for your entire digital experience. These carefully selected pairings create unique atmospheres and support different content needs.</p>
+            </div>
+            
+            <div class="grid">
+                <!-- Typography Card 1 -->
+                <div class="card">
+                    <div class="card-title">Elegant Editorial</div>
+                    <div class="card-content">
+                        <div class="details">
+                            <div class="detail-row">
+                                <div class="detail-label">Heading:</div>
+                                <div>Playfair Display (serif)</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Body:</div>
+                                <div>Source Sans Pro (sans-serif)</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Mood:</div>
+                                <div>Sophisticated, literary, refined</div>
+                            </div>
+                        </div>
+                        
+                        <div class="elegant-editorial">
+                            <div class="example-box">
+                                <h4>Refined Taste</h4>
+                                <p>This elegant pairing balances a literary serif with a clean sans-serif body text, perfect for editorial content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Typography Card 2 -->
+                <div class="card">
+                    <div class="card-title">Modern Tech</div>
+                    <div class="card-content">
+                        <div class="details">
+                            <div class="detail-row">
+                                <div class="detail-label">Heading:</div>
+                                <div>Montserrat (sans-serif)</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Body:</div>
+                                <div>Roboto (sans-serif)</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Mood:</div>
+                                <div>Clean, forward-thinking, professional</div>
+                            </div>
+                        </div>
+                        
+                        <div class="modern-tech">
+                            <div class="example-box">
+                                <h4>Future Forward</h4>
+                                <p>This contemporary sans-serif combination provides clarity and professionalism, ideal for technology companies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Typography Card 3 -->
+                <div class="card">
+                    <div class="card-title">Creative Agency</div>
+                    <div class="card-content">
+                        <div class="details">
+                            <div class="detail-row">
+                                <div class="detail-label">Heading:</div>
+                                <div>Bodoni (serif)</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Body:</div>
+                                <div>Poppins (sans-serif)</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Mood:</div>
+                                <div>Bold, artistic, high-contrast</div>
+                            </div>
+                        </div>
+                        
+                        <div class="modern-tech">
+                            <div class="example-box">
+                                <h4>Bold Vision</h4>
+                                <p>This dramatic pairing combines a high-contrast serif with a geometric sans-serif, perfect for creative brands.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- COLOR SCHEMES SECTION -->
+        <section id="colors">
+            <h2>Color Schemes</h2>
+            <div class="section-intro">
+                <p>Color creates emotional connections and reinforces brand identity. Each palette offers a unique mood and personality for your digital projects.</p>
+            </div>
+            
+            <div class="grid">
+                <!-- Color Scheme Card 1 -->
+                <div class="card">
+                    <div class="card-title">Nordic Frost</div>
+                    <div class="card-content">
+                        <div class="details">
+                            <div class="detail-row">
+                                <div class="detail-label">Primary:</div>
+                                <div><span class="color-swatch" style="background-color: #829CBC;"></span>#829CBC</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Secondary:</div>
+                                <div><span class="color-swatch" style="background-color: #E5E9EC;"></span>#E5E9EC</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Accent:</div>
+                                <div><span class="color-swatch" style="background-color: #2E3B4E;"></span>#2E3B4E</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Mood:</div>
+                                <div>Calm, minimal, sophisticated</div>
+                            </div>
+                        </div>
+                        
+                        <div class="example-box nordic-frost"></div>
+                    </div>
+                </div>
+                
+                <!-- Color Scheme Card 2 -->
+                <div class="card">
+                    <div class="card-title">Terra Warmth</div>
+                    <div class="card-content">
+                        <div class="details">
+                            <div class="detail-row">
+                                <div class="detail-label">Primary:</div>
+                                <div><span class="color-swatch" style="background-color: #D67D3E;"></span>#D67D3E</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Secondary:</div>
+                                <div><span class="color-swatch" style="background-color: #F2EEE3;"></span>#F2EEE3</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Accent:</div>
+                                <div><span class="color-swatch" style="background-color: #594134;"></span>#594134</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Mood:</div>
+                                <div>Organic, earthy, inviting</div>
+                            </div>
+                        </div>
+                        
+                        <div class="example-box terra-warmth"></div>
+                    </div>
+                </div>
+                
+                <!-- Color Scheme Card 3 -->
+                <div class="card">
+                    <div class="card-title">Digital Neon</div>
+                    <div class="card-content">
+                        <div class="details">
+                            <div class="detail-row">
+                                <div class="detail-label">Primary:</div>
+                                <div><span class="color-swatch" style="background-color: #0F0F1B;"></span>#0F0F1B</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Secondary:</div>
+                                <div><span class="color-swatch" style="background-color: #E9EBFF;"></span>#E9EBFF</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Accent:</div>
+                                <div><span class="color-swatch" style="background-color: #00F0FF;"></span>#00F0FF</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Mood:</div>
+                                <div>Futuristic, bold, technological</div>
+                            </div>
+                        </div>
+                        
+                        <div class="example-box digital-neon"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- LAYOUTS SECTION -->
+        <section id="layouts">
+            <h2>Responsive Layout Patterns</h2>
+            <div class="section-intro">
+                <p>The way content is arranged creates rhythm, hierarchy, and user flow. Each layout pattern offers unique possibilities for content presentation and user interaction.</p>
+            </div>
+            
+            <div class="grid">
+                <!-- Layout Card 1 -->
+                <div class="card">
+                    <div class="card-title">Asymmetric Grid</div>
+                    <div class="card-content">
+                        <div class="details">
+                            <div class="detail-row">
+                                <div class="detail-label">Structure:</div>
+                                <div>Uneven column widths creating dynamic tension</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Best for:</div>
+                                <div>Portfolio sites, creative agencies</div>
+                            </div>
+                        </div>
+                        
+                        <div class="asymmetric-grid">
+                            <div class="example-box">
+                                <div class="item item-large"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Layout Card 2 -->
+                <div class="card">
+                    <div class="card-title">Editorial Cards</div>
+                    <div class="card-content">
+                        <div class="details">
+                            <div class="detail-row">
+                                <div class="detail-label">Structure:</div>
+                                <div>Magazine-like blocks with varying heights</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Best for:</div>
+                                <div>News sites, blogs, content-heavy pages</div>
+                            </div>
+                        </div>
+                        
+                        <div class="editorial-cards">
+                            <div class="example-box">
+                                <div class="feature-article"></div>
+                                <div class="article-card"></div>
+                                <div class="article-card"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- WEB ELEMENTS SECTION -->
+        <section id="elements">
+            <h2>Web Elements</h2>
+            <div class="section-intro">
+                <p>The UI elements you choose can transform a standard website into a memorable experience. Each component style offers unique aesthetic and interactive possibilities.</p>
+            </div>
+            
+            <div class="grid">
+                <!-- Element Card 1 -->
+                <div class="card">
+                    <div class="card-title">Glassmorphic Cards</div>
+                    <div class="card-content">
+                        <div class="details">
+                            <div class="detail-row">
+                                <div class="detail-label">Style:</div>
+                                <div>Frosted glass effect with blur and transparency</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Best for:</div>
+                                <div>Modern interfaces, layered information</div>
+                            </div>
+                        </div>
+                        
+                        <div class="glassmorphic">
+                            <div class="example-box">
+                                <div class="glassmorphic-card"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Element Card 2 -->
+                <div class="card">
+                    <div class="card-title">Neumorphic Buttons</div>
+                    <div class="card-content">
+                        <div class="details">
+                            <div class="detail-row">
+                                <div class="detail-label">Style:</div>
+                                <div>Soft embossed/debossed elements with subtle shadows</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Best for:</div>
+                                <div>Audio interfaces, IoT controls</div>
+                            </div>
+                        </div>
+                        
+                        <div class="neumorphic">
+                            <div class="example-box">
+                                <button class="neumorphic-button">Click Me</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- BRANDING SECTION -->
+        <section id="branding">
+            <h2>Branding Concepts</h2>
+            <div class="section-intro">
+                <p>Your brand identity creates immediate recognition and emotional connection. Each concept offers a distinctive approach to creating a cohesive brand experience online.</p>
+            </div>
+            
+            <div class="grid">
+                <!-- Branding Card 1 -->
+                <div class="card">
+                    <div class="card-title">Geometric Minimalism</div>
+                    <div class="card-content">
+                        <div class="details">
+                            <div class="detail-row">
+                                <div class="detail-label">Style:</div>
+                                <div>Clean lines, basic shapes, limited palette</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Personality:</div>
+                                <div>Rational, precise, modern</div>
+                            </div>
+                        </div>
+                        
+                        <div class="geometric">
+                            <div class="example-box">
+                                <div class="geometric-logo">
+                                    <div class="circle"></div>
+                                    <div class="square"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Branding Card 2 -->
+                <div class="card">
+                    <div class="card-title">Organic Texture</div>
+                    <div class="card-content">
+                        <div class="details">
+                            <div class="detail-row">
+                                <div class="detail-label">Style:</div>
+                                <div>Natural patterns, handmade textures, earthy tones</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Personality:</div>
+                                <div>Authentic, artisanal, sustainable</div>
+                            </div>
+                        </div>
+                        
+                        <div class="organic">
+                            <div class="example-box">
+                                <div class="organic-logo">Artisan</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Example</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding: 20px;
+        }
+        
+        /* Color palette variables */
+        :root {
+            --primary: #3366CC;
+            --secondary: #FF9933;
+            --accent1: #66CC99;
+            --accent2: #9966CC;
+            --accent3: #CC6666;
+            --accent4: #66CCCC;
+        }
+        
+        /* Container styles */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
+        h2 {
+            margin: 30px 0 15px;
+        }
+        
+        .color-info {
+            margin-bottom: 40px;
+        }
+        
+        /* Color swatch styles */
+        .swatches {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .swatch {
+            flex: 1;
+            min-width: 150px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .swatch-color {
+            height: 100px;
+        }
+        
+        .swatch-details {
+            padding: 12px;
+            background-color: #f8f8f8;
+        }
+        
+        .swatch-name {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .swatch-hex {
+            font-family: monospace;
+            color: #555;
+        }
+        
+        /* Example sections */
+        .section {
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            color: white;
+        }
+        
+        .primary-section {
+            background-color: var(--primary);
+        }
+        
+        .secondary-section {
+            background-color: var(--secondary);
+        }
+        
+        .accent-sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .accent1-section {
+            background-color: var(--accent1);
+            padding: 20px;
+            border-radius: 8px;
+            color: #333;
+        }
+        
+        .accent2-section {
+            background-color: var(--accent2);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .accent3-section {
+            background-color: var(--accent3);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .accent4-section {
+            background-color: var(--accent4);
+            padding: 20px;
+            border-radius: 8px;
+            color: #333;
+        }
+        
+        /* Buttons */
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 30px 0;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .btn-secondary {
+            background-color: var(--secondary);
+            color: white;
+        }
+        
+        .btn-accent1 {
+            background-color: var(--accent1);
+            color: #333;
+        }
+        
+        .btn-accent2 {
+            background-color: var(--accent2);
+            color: white;
+        }
+        
+        .btn-accent3 {
+            background-color: var(--accent3);
+            color: white;
+        }
+        
+        .btn-accent4 {
+            background-color: var(--accent4);
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Extended Color Palette Example</h1>
+        
+        <div class="color-info">
+            <p>This demonstrates a simple HTML and CSS implementation of our extended color palette with primary, secondary, and accent colors.</p>
+        </div>
+        
+        <h2>Color Swatches</h2>
+        <div class="swatches">
+            <div class="swatch">
+                <div class="swatch-color" style="background-color: var(--primary);"></div>
+                <div class="swatch-details">
+                    <div class="swatch-name">Primary</div>
+                    <div class="swatch-hex">#3366CC</div>
+                </div>
+            </div>
+            
+            <div class="swatch">
+                <div class="swatch-color" style="background-color: var(--secondary);"></div>
+                <div class="swatch-details">
+                    <div class="swatch-name">Secondary</div>
+                    <div class="swatch-hex">#FF9933</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swatches">
+            <div class="swatch">
+                <div class="swatch-color" style="background-color: var(--accent1);"></div>
+                <div class="swatch-details">
+                    <div class="swatch-name">Accent 1</div>
+                    <div class="swatch-hex">#66CC99</div>
+                </div>
+            </div>
+            
+            <div class="swatch">
+                <div class="swatch-color" style="background-color: var(--accent2);"></div>
+                <div class="swatch-details">
+                    <div class="swatch-name">Accent 2</div>
+                    <div class="swatch-hex">#9966CC</div>
+                </div>
+            </div>
+            
+            <div class="swatch">
+                <div class="swatch-color" style="background-color: var(--accent3);"></div>
+                <div class="swatch-details">
+                    <div class="swatch-name">Accent 3</div>
+                    <div class="swatch-hex">#CC6666</div>
+                </div>
+            </div>
+            
+            <div class="swatch">
+                <div class="swatch-color" style="background-color: var(--accent4);"></div>
+                <div class="swatch-details">
+                    <div class="swatch-name">Accent 4</div>
+                    <div class="swatch-hex">#66CCCC</div>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Example Sections</h2>
+        
+        <div class="section primary-section">
+            <h3>Primary Section</h3>
+            <p>This section uses the primary color (#3366CC) for its background.</p>
+        </div>
+        
+        <div class="section secondary-section">
+            <h3>Secondary Section</h3>
+            <p>This section uses the secondary color (#FF9933) for its background.</p>
+        </div>
+        
+        <h3>Accent Sections</h3>
+        <div class="accent-sections">
+            <div class="accent1-section">
+                <h4>Accent 1</h4>
+                <p>Mint Green (#66CC99)</p>
+            </div>
+            
+            <div class="accent2-section">
+                <h4>Accent 2</h4>
+                <p>Purple (#9966CC)</p>
+            </div>
+            
+            <div class="accent3-section">
+                <h4>Accent 3</h4>
+                <p>Soft Red (#CC6666)</p>
+            </div>
+            
+            <div class="accent4-section">
+                <h4>Accent 4</h4>
+                <p>Teal (#66CCCC)</p>
+            </div>
+        </div>
+        
+        <h2>Button Examples</h2>
+        <div class="buttons">
+            <button class="btn btn-primary">Primary Button</button>
+            <button class="btn btn-secondary">Secondary Button</button>
+            <button class="btn btn-accent1">Accent 1 Button</button>
+            <button class="btn btn-accent2">Accent 2 Button</button>
+            <button class="btn btn-accent3">Accent 3 Button</button>
+            <button class="btn btn-accent4">Accent 4 Button</button>
+        </div>
+    </div>
+</body>
+</html>

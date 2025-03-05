@@ -1,0 +1,8 @@
+Primary: #3366CC (Rich Blue)
+Secondary: #FF9933 (Warm Orange)
+Accent 1: #66CC99 (Mint Green)
+Accent 2: #9966CC (Purple)
+Accent 3: #CC6666 (Soft Red)
+Accent 4: #66CCCC (Teal)
+
+

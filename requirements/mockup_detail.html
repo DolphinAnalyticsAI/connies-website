@@ -1,0 +1,1859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Walking Service - Business Idea Details | VentureStart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #3366CC;
+            --primary-light: #5580D7;
+            --primary-dark: #254E99;
+            --primary-bg: rgba(51, 102, 204, 0.05);
+            --secondary: #FF9933;
+            --secondary-light: #FFAD5C;
+            --secondary-dark: #E67300;
+            --secondary-bg: rgba(255, 153, 51, 0.05);
+            --accent1: #66CC99;
+            --accent1-light: #8DDDB5;
+            --accent1-bg: rgba(102, 204, 153, 0.05);
+            --accent2: #9966CC;
+            --accent2-light: #B288DB;
+            --accent2-bg: rgba(153, 102, 204, 0.05);
+            --accent3: #CC6666;
+            --accent3-light: #DB8888;
+            --accent3-bg: rgba(204, 102, 102, 0.05);
+            --accent4: #66CCCC;
+            --accent4-light: #88DBDB;
+            --accent4-bg: rgba(102, 204, 204, 0.05);
+            --white: #FFFFFF;
+            --off-white: #F8F9FA;
+            --light-gray: #E9ECEF;
+            --medium-gray: #CED4DA;
+            --dark-gray: #495057;
+            --charcoal: #343A40;
+            --black: #212529;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--dark-gray);
+            background-color: var(--off-white);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4, h5 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: var(--charcoal);
+            letter-spacing: -0.02em;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            font-size: 1.75rem;
+            line-height: 1.3;
+            margin: 2rem 0 1rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 50px;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--accent2) 100%);
+            border-radius: 3px;
+        }
+        
+        h3 {
+            font-size: 1.25rem;
+            line-height: 1.4;
+            margin: 1.5rem 0 1rem;
+            color: var(--primary-dark);
+        }
+        
+        h4 {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin: 1.25rem 0 0.75rem;
+            color: var(--charcoal);
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+        
+        .content-text {
+            font-family: 'Merriweather', serif;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--charcoal);
+        }
+        
+        .content-text p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .content-text ul, .content-text ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        
+        .content-text li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent2) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: inline-block;
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-icon {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent2) 60%);
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 20px;
+        }
+        
+        nav {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .nav-item {
+            text-decoration: none;
+            color: var(--dark-gray);
+            font-weight: 600;
+            font-size: 15px;
+            padding: 8px 0;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--accent2) 100%);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-item:hover {
+            color: var(--primary);
+        }
+        
+        .nav-item:hover::after,
+        .nav-item.active::after {
+            width: 100%;
+        }
+        
+        .nav-item.active {
+            color: var(--primary);
+        }
+        
+        .nav-item.cta {
+            background-color: var(--primary);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-item.cta:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(51, 102, 204, 0.2);
+        }
+        
+        .nav-item.cta::after {
+            display: none;
+        }
+        
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--dark-gray);
+        }
+        
+        /* Breadcrumbs */
+        .breadcrumbs {
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb-item {
+            color: var(--dark-gray);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .breadcrumb-item:hover {
+            color: var(--primary);
+        }
+        
+        .breadcrumb-separator {
+            margin: 0 10px;
+            color: var(--medium-gray);
+        }
+        
+        .breadcrumb-current {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        /* Business Idea Header */
+        .idea-header {
+            background-color: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            padding: 30px;
+            margin-bottom: 40px;
+            display: flex;
+            gap: 40px;
+        }
+        
+        .idea-image {
+            flex: 0 0 300px;
+            height: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent2) 100%);
+            position: relative;
+        }
+        
+        .idea-image-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        
+        .idea-info {
+            flex: 1;
+        }
+        
+        .idea-meta-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .idea-meta-badge {
+            padding: 6px 12px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .badge-category {
+            background-color: var(--primary-bg);
+            color: var(--primary);
+        }
+        
+        .badge-effort {
+            background-color: var(--accent2-bg);
+            color: var(--accent2);
+        }
+        
+        .badge-income {
+            background-color: var(--secondary-bg);
+            color: var(--secondary);
+        }
+        
+        .badge-requirements {
+            background-color: var(--accent3-bg);
+            color: var(--accent3);
+        }
+        
+        .idea-title {
+            margin-bottom: 15px;
+        }
+        
+        .idea-description {
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+            color: var(--dark-gray);
+        }
+        
+        .idea-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .idea-action-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .action-primary {
+            background-color: var(--primary);
+            color: white;
+            box-shadow: 0 4px 10px rgba(51, 102, 204, 0.2);
+        }
+        
+        .action-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(51, 102, 204, 0.3);
+        }
+        
+        .action-secondary {
+            background-color: var(--white);
+            color: var(--primary);
+            border: 1px solid var(--primary);
+        }
+        
+        .action-secondary:hover {
+            background-color: var(--primary-bg);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        /* Top Navigation Menu */
+        .top-navigation {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .top-nav-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .top-nav-link:hover {
+            background-color: var(--primary-bg);
+            transform: translateY(-2px);
+        }
+        
+        .top-nav-link-icon {
+            font-size: 0.8rem;
+        }
+        
+        /* Main Content Layout */
+        .content-wrapper {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            flex: 0 0 320px;
+            position: sticky;
+            top: 90px;
+            align-self: flex-start;
+        }
+        
+        .sidebar-widget {
+            background-color: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+        
+        .widget-title {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--light-gray);
+            color: var(--charcoal);
+        }
+        
+        /* TOC Widget */
+        .toc-list {
+            list-style: none;
+        }
+        
+        .toc-item {
+            margin-bottom: 12px;
+        }
+        
+        .toc-link {
+            text-decoration: none;
+            color: var(--dark-gray);
+            display: block;
+            padding: 5px 0;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+            border-left: 2px solid transparent;
+            padding-left: 10px;
+        }
+        
+        .toc-link:hover {
+            color: var(--primary);
+            border-left-color: var(--primary);
+            padding-left: 15px;
+        }
+        
+        .toc-link.active {
+            color: var(--primary);
+            border-left-color: var(--primary);
+            font-weight: 600;
+            padding-left: 15px;
+        }
+        
+        /* Social Widget */
+        .social-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .social-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 6px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .social-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Related Ideas Widget */
+        .related-idea {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .related-idea:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .related-idea-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 6px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 0.8rem;
+        }
+        
+        .related-1 {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+        }
+        
+        .related-2 {
+            background: linear-gradient(135deg, var(--accent1) 0%, var(--accent1-light) 100%);
+        }
+        
+        .related-3 {
+            background: linear-gradient(135deg, var(--accent2) 0%, var(--accent2-light) 100%);
+        }
+        
+        .related-4 {
+            background: linear-gradient(135deg, var(--accent3) 0%, var(--accent3-light) 100%);
+        }
+        
+        .related-idea-info {
+            flex: 1;
+        }
+        
+        .related-idea-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: var(--charcoal);
+            text-decoration: none;
+            display: block;
+            transition: color 0.3s ease;
+        }
+        
+        .related-idea-title:hover {
+            color: var(--primary);
+        }
+        
+        .related-idea-category {
+            font-size: 0.8rem;
+            color: var(--primary);
+        }
+        
+        /* Question Widget */
+        .question-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .form-field {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .form-label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--charcoal);
+        }
+        
+        .form-input, .form-textarea {
+            padding: 10px;
+            border: 1px solid var(--medium-gray);
+            border-radius: 6px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-input:focus, .form-textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(51, 102, 204, 0.1);
+        }
+        
+        .form-textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        .form-submit {
+            padding: 10px;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .form-submit:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(51, 102, 204, 0.2);
+        }
+        
+        /* Success Rate Widget */
+        .success-rate {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .rate-value {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .rate-label {
+            margin-top: -5px;
+            font-size: 0.9rem;
+        }
+        
+        .progress-bar {
+            height: 10px;
+            background-color: var(--light-gray);
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--accent2) 100%);
+        }
+        
+        .progress-note {
+            font-size: 0.9rem;
+            color: var(--dark-gray);
+        }
+        
+        /* Tool & Resources Widget */
+        .resources-list {
+            list-style: none;
+        }
+        
+        .resource-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .resource-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .resource-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--charcoal);
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .resource-link:hover {
+            color: var(--primary);
+        }
+        
+        .resource-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        
+        .resource-icon.tool {
+            background: linear-gradient(135deg, var(--accent4) 0%, var(--accent4-light) 100%);
+        }
+        
+        .resource-icon.guide {
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-light) 100%);
+        }
+        
+        .resource-icon.template {
+            background: linear-gradient(135deg, var(--accent1) 0%, var(--accent1-light) 100%);
+        }
+        
+        /* Earnings Calculator Widget */
+        .calculator-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .calculator-field {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .calculator-label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--charcoal);
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .calculator-input {
+            padding: 10px;
+            border: 1px solid var(--medium-gray);
+            border-radius: 6px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+        
+        .calculator-slider {
+            width: 100%;
+            margin-top: 5px;
+        }
+        
+        .calculator-result {
+            background-color: var(--primary-bg);
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+        
+        .result-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .result-row:last-child {
+            margin-bottom: 0;
+            padding-top: 10px;
+            border-top: 1px solid var(--medium-gray);
+            font-weight: 700;
+        }
+        
+        .result-label {
+            color: var(--dark-gray);
+        }
+        
+        .result-value {
+            font-weight: 600;
+            color: var(--charcoal);
+        }
+        
+        /* Expert Tip Widget */
+        .expert-tip {
+            background-color: var(--accent1-bg);
+            border-radius: 6px;
+            padding: 20px;
+            position: relative;
+        }
+        
+        .expert-tip::before {
+            content: '"';
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            font-size: 60px;
+            color: var(--accent1);
+            opacity: 0.3;
+            font-family: serif;
+            line-height: 1;
+        }
+        
+        .tip-content {
+            position: relative;
+            font-style: italic;
+            color: var(--charcoal);
+            margin-bottom: 15px;
+        }
+        
+        .expert-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .expert-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent1) 0%, var(--accent1-light) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        
+        .expert-details {
+            flex: 1;
+        }
+        
+        .expert-name {
+            font-weight: 600;
+            color: var(--charcoal);
+        }
+        
+        .expert-role {
+            font-size: 0.85rem;
+            color: var(--dark-gray);
+        }
+        
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            background-color: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            padding: 40px;
+        }
+        
+        .content-notice {
+            background-color: var(--accent1-bg);
+            border-left: 4px solid var(--accent1);
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+        
+        /* Markdown Section Styling */
+        .markdown-section {
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .markdown-section:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .section-anchor {
+            display: block;
+            position: relative;
+            top: -100px;
+            visibility: hidden;
+        }
+        
+        /* Related Ideas Section */
+        .related-ideas-section {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid var(--light-gray);
+        }
+        
+        .related-title {
+            margin-bottom: 30px;
+        }
+        
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        
+        .related-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .related-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .related-card-header {
+            height: 120px;
+            position: relative;
+        }
+        
+        .related-card-header.card-1 {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+        }
+        
+        .related-card-header.card-2 {
+            background: linear-gradient(135deg, var(--accent1) 0%, var(--accent1-light) 100%);
+        }
+        
+        .related-card-header.card-3 {
+            background: linear-gradient(135deg, var(--accent2) 0%, var(--accent2-light) 100%);
+        }
+        
+        .related-card-header.card-4 {
+            background: linear-gradient(135deg, var(--accent3) 0%, var(--accent3-light) 100%);
+        }
+        
+        .related-card-title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px;
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+            z-index: 1;
+        }
+        
+        .related-card-content {
+            padding: 15px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .related-card-category {
+            font-size: 0.8rem;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+        
+        .related-card-description {
+            font-size: 0.9rem;
+            color: var(--dark-gray);
+            margin-bottom: 15px;
+            flex: 1;
+        }
+        
+        .related-card-link {
+            margin-top: auto;
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .related-card-link:hover {
+            color: var(--primary-dark);
+        }
+        
+        .arrow-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .related-card-link:hover .arrow-icon {
+            transform: translateX(3px);
+        }
+        
+        /* Navigation */
+        .idea-navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid var(--light-gray);
+        }
+        
+        .nav-previous, .nav-next {
+            display: flex;
+            flex-direction: column;
+            max-width: 45%;
+        }
+        
+        .nav-direction {
+            font-size: 0.9rem;
+            color: var(--dark-gray);
+            margin-bottom: 5px;
+        }
+        
+        .nav-title {
+            font-weight: 600;
+            color: var(--primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-title:hover {
+            color: var(--primary-dark);
+        }
+        
+        .nav-next {
+            text-align: right;
+        }
+        
+        .browse-all {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .browse-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background-color: var(--off-white);
+            color: var(--primary);
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .browse-link:hover {
+            background-color: var(--primary-bg);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .back-to-top {
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 99;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Mobile Sidebar */
+        .mobile-sidebar-toggle {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            z-index: 99;
+            border: none;
+            cursor: pointer;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .idea-header {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .idea-image {
+                flex: 0 0 auto;
+                width: 100%;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+            
+            .related-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 900px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                flex: 0 0 auto;
+                position: static;
+                width: 100%;
+                height: auto;
+                display: none;
+            }
+            
+            .sidebar.mobile-visible {
+                display: block;
+            }
+            
+            .mobile-sidebar-toggle {
+                display: flex;
+            }
+            
+            .nav-item:not(.cta) {
+                display: none;
+            }
+            
+            .menu-toggle {
+                display: block;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .idea-actions {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .idea-action-button {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .breadcrumbs {
+                flex-wrap: wrap;
+            }
+            
+            .main-content {
+                padding: 25px 20px;
+            }
+            
+            .related-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .idea-navigation {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .nav-previous, .nav-next {
+                max-width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <a href="#" class="logo">
+                    <div class="logo-icon">V</div>
+                    VentureStart
+                </a>
+                <nav>
+                    <a href="#" class="nav-item">Home</a>
+                    <a href="#" class="nav-item active">Ideas</a>
+                    <a href="#" class="nav-item">Success Stories</a>
+                    <a href="#" class="nav-item">About</a>
+                    <a href="#" class="nav-item cta">Get Started</a>
+                    <button class="menu-toggle">☰</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <a href="#" class="breadcrumb-item">Home</a>
+            <span class="breadcrumb-separator">/</span>
+            <a href="#" class="breadcrumb-item">Business Ideas</a>
+            <span class="breadcrumb-separator">/</span>
+            <a href="#" class="breadcrumb-item">Pet Services</a>
+            <span class="breadcrumb-separator">/</span>
+            <span class="breadcrumb-current">Dog Walking Service</span>
+        </div>
+        
+        <!-- Business Idea Header -->
+        <section class="idea-header">
+            <div class="idea-image">
+                <div class="idea-image-content">
+                    Dog Walking Service Image
+                </div>
+            </div>
+            <div class="idea-info">
+                <div class="idea-meta-badges">
+                    <span class="idea-meta-badge badge-category">Pet Services</span>
+                    <span class="idea-meta-badge badge-effort">Moderate Effort</span>
+                    <span class="idea-meta-badge badge-income">$500-$2000/mo</span>
+                    <span class="idea-meta-badge badge-requirements">Pet handling skills</span>
+                </div>
+                <h1 class="idea-title">Dog Walking Service</h1>
+                <p class="idea-description">Start a dog walking service for busy pet owners in your neighborhood with minimal startup costs and flexible scheduling. This business idea allows you to combine a love for animals with a profitable, scalable service that meets a real need in your community.</p>
+                
+                <div class="idea-actions">
+                    <a href="#" class="idea-action-button action-primary">Start This Business</a>
+                    <a href="#" class="idea-action-button action-secondary">Download Business Plan</a>
+                    <a href="#" class="idea-action-button action-secondary">Save For Later</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Main Content Area -->
+        <div class="content-wrapper">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- TOC Widget -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Table of Contents</h3>
+                    <ul class="toc-list">
+                        <li class="toc-item">
+                            <a href="#overview" class="toc-link active">Overview</a>
+                        </li>
+                        <li class="toc-item">
+                            <a href="#quick-start" class="toc-link">Quick Start Guide</a>
+                        </li>
+                        <li class="toc-item">
+                            <a href="#market-analysis" class="toc-link">Market Analysis</a>
+                        </li>
+                        <li class="toc-item">
+                            <a href="#startup-costs" class="toc-link">Startup Costs</a>
+                        </li>
+                        <li class="toc-item">
+                            <a href="#pricing-strategy" class="toc-link">Pricing Strategy</a>
+                        </li>
+                        <li class="toc-item">
+                            <a href="#30-day-plan" class="toc-link">30 Day Plan</a>
+                        </li>
+                        <li class="toc-item">
+                            <a href="#marketing-tips" class="toc-link">Marketing Tips</a>
+                        </li>
+                        <li class="toc-item">
+                            <a href="#scaling" class="toc-link">Scaling Your Business</a>
+                        </li>
+                        <li class="toc-item">
+                            <a href="#faqs" class="toc-link">FAQs</a>
+                        </li>
+                        <li class="toc-item">
+                            <a href="#resources" class="toc-link">Resources</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Social Widget -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Share This Idea</h3>
+                    <div class="social-sidebar">
+                        <a href="#" class="social-button" style="background-color: #3b5998;">
+                            ✓ Share on Facebook
+                        </a>
+                        <a href="#" class="social-button" style="background-color: #1da1f2;">
+                            ✓ Share on Twitter
+                        </a>
+                        <a href="#" class="social-button" style="background-color: #0077b5;">
+                            ✓ Share on LinkedIn
+                        </a>
+                        <a href="#" class="social-button" style="background-color: #bd081c;">
+                            ✓ Save to Pinterest
+                        </a>
+                        <a href="#" class="social-button" style="background-color: var(--accent3);">
+                            ✓ Email to a Friend
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Related Ideas Widget -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Similar Business Ideas</h3>
+                    <div class="related-ideas">
+                        <div class="related-idea">
+                            <div class="related-idea-image related-1">Pet</div>
+                            <div class="related-idea-info">
+                                <a href="#" class="related-idea-title">Pet Sitting Service</a>
+                                <span class="related-idea-category">Pet Services</span>
+                            </div>
+                        </div>
+                        <div class="related-idea">
+                            <div class="related-idea-image related-2">Groom</div>
+                            <div class="related-idea-info">
+                                <a href="#" class="related-idea-title">Mobile Pet Grooming</a>
+                                <span class="related-idea-category">Pet Services</span>
+                            </div>
+                        </div>
+                        <div class="related-idea">
+                            <div class="related-idea-image related-3">Train</div>
+                            <div class="related-idea-info">
+                                <a href="#" class="related-idea-title">Dog Training Service</a>
+                                <span class="related-idea-category">Pet Services</span>
+                            </div>
+                        </div>
+                        <div class="related-idea">
+                            <div class="related-idea-image related-4">Care</div>
+                            <div class="related-idea-info">
+                                <a href="#" class="related-idea-title">Pet Supply Delivery</a>
+                                <span class="related-idea-category">Pet Services</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ask a Question Widget -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Have a Question?</h3>
+                    <form class="question-form">
+                        <div class="form-field">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" class="form-input" placeholder="Enter your name">
+                        </div>
+                        <div class="form-field">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-input" placeholder="Enter your email">
+                        </div>
+                        <div class="form-field">
+                            <label for="question" class="form-label">Your Question</label>
+                            <textarea id="question" class="form-textarea" placeholder="What would you like to know about this business idea?"></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">Submit Question</button>
+                    </form>
+                </div>
+                
+                <!-- Success Rate Widget -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Success Rate</h3>
+                    <div class="success-rate">
+                        <div class="rate-value">87%</div>
+                        <p class="rate-label">of our users succeed with this idea</p>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 87%"></div>
+                    </div>
+                    <p class="progress-note">Based on feedback from 246 entrepreneurs who started this business using our guides.</p>
+                </div>
+                
+                <!-- Tool & Resources Widget -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Useful Tools & Templates</h3>
+                    <ul class="resources-list">
+                        <li class="resource-item">
+                            <a href="#" class="resource-link">
+                                <div class="resource-icon tool">T</div>
+                                <span>Dog Walking Service Agreement Template</span>
+                            </a>
+                        </li>
+                        <li class="resource-item">
+                            <a href="#" class="resource-link">
+                                <div class="resource-icon guide">G</div>
+                                <span>Pet Business Insurance Guide</span>
+                            </a>
+                        </li>
+                        <li class="resource-item">
+                            <a href="#" class="resource-link">
+                                <div class="resource-icon template">T</div>
+                                <span>Client Intake Form Template</span>
+                            </a>
+                        </li>
+                        <li class="resource-item">
+                            <a href="#" class="resource-link">
+                                <div class="resource-icon tool">T</div>
+                                <span>Pricing Calculator Tool</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Earnings Calculator Widget -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Earnings Calculator</h3>
+                    <div class="calculator-form">
+                        <div class="calculator-field">
+                            <label class="calculator-label">
+                                <span>Number of walks per day</span>
+                                <span>5</span>
+                            </label>
+                            <input type="range" min="1" max="10" value="5" class="calculator-slider">
+                        </div>
+                        <div class="calculator-field">
+                            <label class="calculator-label">
+                                <span>Price per walk</span>
+                                <span>$20</span>
+                            </label>
+                            <input type="range" min="10" max="40" value="20" class="calculator-slider">
+                        </div>
+                        <div class="calculator-field">
+                            <label class="calculator-label">
+                                <span>Days per week</span>
+                                <span>5</span>
+                            </label>
+                            <input type="range" min="1" max="7" value="5" class="calculator-slider">
+                        </div>
+                        <div class="calculator-result">
+                            <div class="result-row">
+                                <span class="result-label">Weekly income:</span>
+                                <span class="result-value">$500</span>
+                            </div>
+                            <div class="result-row">
+                                <span class="result-label">Monthly income:</span>
+                                <span class="result-value">$2,000</span>
+                            </div>
+                            <div class="result-row">
+                                <span class="result-label">Annual income:</span>
+                                <span class="result-value">$24,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Expert Tip Widget -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Expert Tip</h3>
+                    <div class="expert-tip">
+                        <p class="tip-content">Consistency is key in dog walking. Dogs thrive on routine, and clients appreciate reliability. Set a schedule you can maintain long-term and stick to it religiously. This simple principle has helped my business retain clients for years.</p>
+                        <div class="expert-info">
+                            <div class="expert-avatar">J</div>
+                            <div class="expert-details">
+                                <div class="expert-name">Jessica Miller</div>
+                                <div class="expert-role">Pet Care Professional, 8+ years</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            
+            <!-- Main Content -->
+            <main class="main-content">
+                <!-- Top Navigation Menu -->
+                <div class="top-navigation">
+                    <a href="#" class="top-nav-link">
+                        <span class="top-nav-link-icon">←</span> Back to All Ideas
+                    </a>
+                    <a href="#" class="top-nav-link">
+                        <span class="top-nav-link-icon">⟳</span> Browse Similar Ideas
+                    </a>
+                    <a href="#" class="top-nav-link">
+                        <span class="top-nav-link-icon">↓</span> Download as PDF
+                    </a>
+                    <a href="#" class="top-nav-link">
+                        <span class="top-nav-link-icon">⭐</span> Save Idea
+                    </a>
+                </div>
+                
+                <div class="content-notice">
+                    <strong>Note for developers:</strong> This content area will be populated by Hugo markdown files. The sections below demonstrate how markdown content will be styled and organized.
+                </div>
+                
+                <!-- Overview Section -->
+                <div id="overview" class="section-anchor"></div>
+                <section class="markdown-section content-text">
+                    <h2>Overview</h2>
+                    <p>A dog walking service offers a simple yet effective solution for busy pet owners who want to ensure their dogs get exercise and bathroom breaks during the day. With minimal startup costs and flexible scheduling, this business allows you to combine a love for animals with a profitable, scalable service.</p>
+                    
+                    <p>Dog walking services typically involve visiting clients' homes, taking their pets for walks, providing fresh water, and sometimes administering medications or performing other pet care tasks. Many successful dog walking businesses evolve to include additional services such as pet sitting, dog boarding, or specialized care for senior or special needs pets.</p>
+                    
+                    <p>This business model is ideal for animal lovers with some experience handling dogs, and can be started part-time while maintaining another job or full-time for higher income potential. As your clientele grows, you can either scale by hiring additional walkers or maintain a smaller, premium service for a select group of clients.</p>
+                </section>
+                
+                <!-- Quick Start Section -->
+                <div id="quick-start" class="section-anchor"></div>
+                <section class="markdown-section content-text">
+                    <h2>Quick Start Guide</h2>
+                    
+                    <p>Want to get your dog walking business up and running quickly? Follow these steps to launch in the next 2-4 weeks:</p>
+                    
+                    <h3>Week 1: Research and Planning</h3>
+                    <ul>
+                        <li><strong>Research local competition</strong> - Identify other dog walkers in your area, their pricing, services, and business model.</li>
+                        <li><strong>Define your service area</strong> - Start small with a 2-3 mile radius around your home to minimize travel time between clients.</li>
+                        <li><strong>Set your rates</strong> - Research competitive rates in your area. Typically $15-25 for a 30-minute walk, depending on your location.</li>
+                        <li><strong>Create a basic business plan</strong> - Outline your services, pricing structure, target market, and goals.</li>
+                    </ul>
+                    
+                    <h3>Week 2: Business Setup</h3>
+                    <ul>
+                        <li><strong>Choose a business name</strong> - Select something memorable that conveys trust and professionalism.</li>
+                        <li><strong>Register your business</strong> - Check local requirements for business licenses and permits.</li>
+                        <li><strong>Get insurance</strong> - Pet care insurance and bonding are essential for protection.</li>
+                        <li><strong>Set up a business bank account</strong> - Keep personal and business finances separate.</li>
+                        <li><strong>Purchase basic supplies</strong> - Leashes, waste bags, treat pouch, first aid kit, etc.</li>
+                    </ul>
+                    
+                    <h3>Week 3: Marketing Preparation</h3>
+                    <ul>
+                        <li><strong>Create a simple website</strong> - Include your services, rates, about page, and contact information.</li>
+                        <li><strong>Set up social media accounts</strong> - Focus on platforms where pet owners are active (Instagram, Facebook).</li>
+                        <li><strong>Design business cards and flyers</strong> - Use professional, appealing design with clear contact information.</li>
+                        <li><strong>Create client forms</strong> - Develop service agreements, pet information forms, and emergency contact forms.</li>
+                    </ul>
+                    
+                    <h3>Week 4: Client Acquisition</h3>
+                    <ul>
+                        <li><strong>Distribute marketing materials</strong> - Post flyers at pet stores, veterinary offices, grooming salons, and community bulletin boards.</li>
+                        <li><strong>Network with local pet businesses</strong> - Build relationships with vets, groomers, and pet store owners for referrals.</li>
+                        <li><strong>Offer free or discounted walks</strong> - Provide initial walks at reduced rates to build clientele and get reviews.</li>
+                        <li><strong>Join local online communities</strong> - Participate in neighborhood social media groups and pet owner forums.</li>
+                    </ul>
+                    
+                    <h4>Quick Start Checklist</h4>
+                    <ul>
+                        <li>Research competition and set competitive rates</li>
+                        <li>Register business and obtain insurance</li>
+                        <li>Purchase necessary supplies</li>
+                        <li>Create basic marketing materials and online presence</li>
+                        <li>Network with local pet businesses for referrals</li>
+                        <li>Offer promotional rates to initial clients</li>
+                        <li>Establish clear policies and procedures</li>
+                        <li>Develop a schedule and booking system</li>
+                    </ul>
+                </section>
+                
+                <!-- Additional Sections (abbreviated for the mockup) -->
+                <div id="market-analysis" class="section-anchor"></div>
+                <section class="markdown-section content-text">
+                    <h2>Market Analysis</h2>
+                    <p>The pet services industry has shown consistent growth, with increasing numbers of pet owners willing to spend on services like dog walking. This section would analyze the market potential, customer demographics, and growth trends in the pet care industry.</p>
+                    <p><em>[This section would contain detailed market analysis content...]</em></p>
+                </section>
+                
+                <div id="startup-costs" class="section-anchor"></div>
+                <section class="markdown-section content-text">
+                    <h2>Startup Costs</h2>
+                    <p>One of the advantages of a dog walking business is the low initial investment required. This section would break down typical startup costs including insurance, supplies, marketing materials, and business registration.</p>
+                    <p><em>[This section would contain detailed startup costs content...]</em></p>
+                </section>
+                
+                <div id="pricing-strategy" class="section-anchor"></div>
+                <section class="markdown-section content-text">
+                    <h2>Pricing Strategy</h2>
+                    <p>Effective pricing is crucial for profitability while remaining competitive. This section would guide you through setting your rates based on location, services offered, and local market conditions.</p>
+                    <p><em>[This section would contain detailed pricing strategy content...]</em></p>
+                </section>
+                
+                <!-- 30 Day Plan Section Condensed for Example -->
+                <div id="30-day-plan" class="section-anchor"></div>
+                <section class="markdown-section content-text">
+                    <h2>30 Day Business Launch Plan</h2>
+                    <p>This comprehensive 30-day plan guides you through launching your dog walking business with a strategic approach to build a solid foundation.</p>
+                    <p><em>[This section would contain detailed 30-day plan content...]</em></p>
+                </section>
+                
+                <div id="marketing-tips" class="section-anchor"></div>
+                <section class="markdown-section content-text">
+                    <h2>Marketing Tips</h2>
+                    <p>Successful dog walking businesses require effective marketing to build a client base. This section would provide strategies for local marketing, online presence, and building referral networks.</p>
+                    <p><em>[This section would contain detailed marketing content...]</em></p>
+                </section>
+                
+                <div id="scaling" class="section-anchor"></div>
+                <section class="markdown-section content-text">
+                    <h2>Scaling Your Business</h2>
+                    <p>As your client base grows, you'll need to decide whether to expand by hiring employees or focus on premium services. This section would outline growth strategies and considerations.</p>
+                    <p><em>[This section would contain detailed scaling content...]</em></p>
+                </section>
+                
+                <div id="faqs" class="section-anchor"></div>
+                <section class="markdown-section content-text">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Common questions about starting and running a dog walking business would be addressed here.</p>
+                    <p><em>[This section would contain FAQ content...]</em></p>
+                </section>
+                
+                <div id="resources" class="section-anchor"></div>
+                <section class="markdown-section content-text">
+                    <h2>Resources</h2>
+                    <p>Additional resources, tools, and references for dog walking business owners would be provided here.</p>
+                    <p><em>[This section would contain resources content...]</em></p>
+                </section>
+                
+                <!-- Related Ideas Section -->
+                <div class="related-ideas-section">
+                    <h2 class="related-title">More Business Ideas You Might Like</h2>
+                    <div class="related-grid">
+                        <div class="related-card">
+                            <div class="related-card-header card-1">
+                                <div class="related-card-title">Pet Sitting Service</div>
+                            </div>
+                            <div class="related-card-content">
+                                <div class="related-card-category">Pet Services</div>
+                                <p class="related-card-description">Provide in-home care for pets while their owners are away on vacation or business trips.</p>
+                                <a href="#" class="related-card-link">View Details <span class="arrow-icon">→</span></a>
+                            </div>
+                        </div>
+                        
+                        <div class="related-card">
+                            <div class="related-card-header card-2">
+                                <div class="related-card-title">Mobile Pet Grooming</div>
+                            </div>
+                            <div class="related-card-content">
+                                <div class="related-card-category">Pet Services</div>
+                                <p class="related-card-description">Offer convenient grooming services that come directly to pet owners' homes.</p>
+                                <a href="#" class="related-card-link">View Details <span class="arrow-icon">→</span></a>
+                            </div>
+                        </div>
+                        
+                        <div class="related-card">
+                            <div class="related-card-header card-3">
+                                <div class="related-card-title">Dog Training Service</div>
+                            </div>
+                            <div class="related-card-content">
+                                <div class="related-card-category">Pet Services</div>
+                                <p class="related-card-description">Help pet owners train their dogs with personalized lessons and behavior correction.</p>
+                                <a href="#" class="related-card-link">View Details <span class="arrow-icon">→</span></a>
+                            </div>
+                        </div>
+                        
+                        <div class="related-card">
+                            <div class="related-card-header card-4">
+                                <div class="related-card-title">Pet Supply Delivery</div>
+                            </div>
+                            <div class="related-card-content">
+                                <div class="related-card-category">Pet Services</div>
+                                <p class="related-card-description">Deliver pet food, toys, and supplies directly to pet owners' homes on a subscription basis.</p>
+                                <a href="#" class="related-card-link">View Details <span class="arrow-icon">→</span></a>
+                            </div>
+                        </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Browse All Link -->
+                                        <div class="browse-all">
+                                            <a href="#" class="browse-link">
+                                                <span>Browse All Business Ideas</span>
+                                                <span class="arrow-icon">→</span>
+                                            </a>
+                                        </div>
+                                        
+                                        <!-- Idea Navigation -->
+                                        <div class="idea-navigation">
+                                            <div class="nav-previous">
+                                                <span class="nav-direction">Previous Idea</span>
+                                                <a href="#" class="nav-title">Pet Sitting Service</a>
+                                            </div>
+                                            <div class="nav-next">
+                                                <span class="nav-direction">Next Idea</span>
+                                                <a href="#" class="nav-title">Mobile Pet Grooming</a>
+                                            </div>
+                                        </div>
+                                    </main>
+                                </div>
+                            </div>
+                            
+                            <!-- Back to Top Button -->
+                            <a href="#" class="back-to-top visible">↑</a>
+                            
+                            <!-- Mobile Sidebar Toggle -->
+                            <button class="mobile-sidebar-toggle">☰</button>
+                            
+                            <!-- Footer (abbreviated for mockup) -->
+                            <footer>
+                                <div class="container">
+                                    <div class="footer-top">
+                                        <div class="footer-logo">
+                                            <a href="#" class="footer-logo-link">
+                                                <div class="footer-logo-icon">V</div>
+                                                VentureStart
+                                            </a>
+                                            <p class="footer-description">Helping aspiring entrepreneurs discover and launch successful business ventures with vetted ideas and practical guidance.</p>
+                                            <div class="social-links">
+                                                <a href="#" class="social-link">F</a>
+                                                <a href="#" class="social-link">T</a>
+                                                <a href="#" class="social-link">L</a>
+                                                <a href="#" class="social-link">I</a>
+                                            </div>
+                                        </div>
+                                        <div class="footer-columns">
+                                            <div class="footer-column">
+                                                <h4 class="footer-column-title">About</h4>
+                                                <a href="#" class="footer-link">Our Mission</a>
+                                                <a href="#" class="footer-link">How It Works</a>
+                                                <a href="#" class="footer-link">Our Team</a>
+                                                <a href="#" class="footer-link">Careers</a>
+                                                <a href="#" class="footer-link">Contact Us</a>
+                                            </div>
+                                            <div class="footer-column">
+                                                <h4 class="footer-column-title">Resources</h4>
+                                                <a href="#" class="footer-link">Blog</a>
+                                                <a href="#" class="footer-link">Business Tools</a>
+                                                <a href="#" class="footer-link">Guides</a>
+                                                <a href="#" class="footer-link">Success Stories</a>
+                                                <a href="#" class="footer-link">FAQ</a>
+                                            </div>
+                                            <div class="footer-column">
+                                                <h4 class="footer-column-title">Legal</h4>
+                                                <a href="#" class="footer-link">Terms of Service</a>
+                                                <a href="#" class="footer-link">Privacy Policy</a>
+                                                <a href="#" class="footer-link">Cookie Policy</a>
+                                                <a href="#" class="footer-link">Disclaimer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="footer-divider"></div>
+                                    <div class="footer-bottom">
+                                        <div class="copyright">© 2025 VentureStart. All rights reserved.</div>
+                                        <div class="footer-bottom-links">
+                                            <a href="#" class="footer-bottom-link">Privacy</a>
+                                            <a href="#" class="footer-bottom-link">Terms</a>
+                                            <a href="#" class="footer-bottom-link">Cookies</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </footer>
+                        
+                            <script>
+                                // Script for TOC active link tracking
+                                document.addEventListener('DOMContentLoaded', function() {
+                                    // Get all section elements and TOC links
+                                    const sections = document.querySelectorAll('.markdown-section');
+                                    const tocLinks = document.querySelectorAll('.toc-link');
+                                    
+                                    // Function to update active TOC link
+                                    function updateActiveTocLink() {
+                                        let currentSectionId = '';
+                                        
+                                        // Find the current section in viewport
+                                        sections.forEach(section => {
+                                            const sectionTop = section.getBoundingClientRect().top;
+                                            if (sectionTop < 150) {
+                                                currentSectionId = section.previousElementSibling.id;
+                                            }
+                                        });
+                                        
+                                        // Update active TOC link
+                                        tocLinks.forEach(link => {
+                                            link.classList.remove('active');
+                                            if (link.getAttribute('href') === '#' + currentSectionId) {
+                                                link.classList.add('active');
+                                            }
+                                        });
+                                    }
+                                    
+                                    // Listen for scroll events
+                                    window.addEventListener('scroll', updateActiveTocLink);
+                                    
+                                    // Back to top button
+                                    const backToTopButton = document.querySelector('.back-to-top');
+                                    
+                                    window.addEventListener('scroll', function() {
+                                        if (window.pageYOffset > 300) {
+                                            backToTopButton.classList.add('visible');
+                                        } else {
+                                            backToTopButton.classList.remove('visible');
+                                        }
+                                    });
+                                    
+                                    backToTopButton.addEventListener('click', function(e) {
+                                        e.preventDefault();
+                                        window.scrollTo({
+                                            top: 0,
+                                            behavior: 'smooth'
+                                        });
+                                    });
+                                    
+                                    // Mobile sidebar toggle
+                                    const sidebarToggle = document.querySelector('.mobile-sidebar-toggle');
+                                    const sidebar = document.querySelector('.sidebar');
+                                    
+                                    sidebarToggle.addEventListener('click', function() {
+                                        sidebar.classList.toggle('mobile-visible');
+                                    });
+                                    
+                                    // Close sidebar when clicking outside on mobile
+                                    document.addEventListener('click', function(event) {
+                                        if (sidebar.classList.contains('mobile-visible') && 
+                                            !sidebar.contains(event.target) && 
+                                            event.target !== sidebarToggle) {
+                                            sidebar.classList.remove('mobile-visible');
+                                        }
+                                    });
+                        
+                                    // Earnings calculator sliders
+                                    const sliders = document.querySelectorAll('.calculator-slider');
+                                    
+                                    sliders.forEach(slider => {
+                                        slider.addEventListener('input', function() {
+                                            // Update the displayed value
+                                            this.parentElement.querySelector('.calculator-label span:last-child').textContent = 
+                                                this.getAttribute('min') === '10' ? '$' + this.value : this.value;
+                                            
+                                            // Calculate earnings
+                                            calculateEarnings();
+                                        });
+                                    });
+                        
+                                    function calculateEarnings() {
+                                        const sliderValues = Array.from(sliders).map(slider => parseInt(slider.value));
+                                        const walksPerDay = sliderValues[0];
+                                        const pricePerWalk = sliderValues[1];
+                                        const daysPerWeek = sliderValues[2];
+                                        
+                                        const weeklyIncome = walksPerDay * pricePerWalk * daysPerWeek;
+                                        const monthlyIncome = weeklyIncome * 4;
+                                        const annualIncome = monthlyIncome * 12;
+                                        
+                                        document.querySelector('.result-row:nth-child(1) .result-value').textContent = '$' + weeklyIncome.toLocaleString();
+                                        document.querySelector('.result-row:nth-child(2) .result-value').textContent = '$' + monthlyIncome.toLocaleString();
+                                        document.querySelector('.result-row:nth-child(3) .result-value').textContent = '$' + annualIncome.toLocaleString();
+                                    }
+                                });
+                            </script>
+                        </body>
+                        </html>
+                        
